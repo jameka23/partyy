@@ -1,279 +1,301 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "Jameka Echols",
-        "username": "jamekae",
-        "email": "jameka@gmail.com",
-        "password": "jameka"
-      },
-      {
-        "id": 2,
-        "name": "Delon Echols",
-        "username": "delona",
-        "email": "delon@gmail.com",
-        "password": "delon"
-      },
-      {
-        "id": 3,
-        "name": "Tyler Echols",
-        "username": "tylerc",
-        "email": "tyler@gmail.com",
-        "password": "tyler"
-      },
-      {
-        "id": 4,
-        "name": "Shawn Williams",
-        "username": "shawnw",
-        "email": "shawn@gmail.com",
-        "password": "shawn"
-      },
-      {
-        "id": 5,
-        "name": "DeSean Webster",
-        "username": "deseanr",
-        "email": "desean@gmail.com",
-        "password": "desean"
-      },
-      {
-        "name": "toby",
-        "username": "tobye",
-        "password": "toby",
-        "email": "toby@gmail.com",
-        "id": 6
-      },
-      {
-        "name": "luke",
-        "username": "lukeq",
-        "password": "luke",
-        "email": "luke@gmail.com",
-        "id": 7
-      },
-      {
-        "name": "kalen",
-        "username": "kalena",
-        "password": "kalen",
-        "email": "kalen@gmail.com",
-        "id": 8
-      },
-      {
-        "name": "jenny",
-        "username": "jennye",
-        "password": "jenny",
-        "email": "jenny@gmail.com",
-        "id": 9
-      },
-      {
-        "name": "chaffin",
-        "username": "chaffins",
-        "password": "chaffin",
-        "email": "chaffin@gmail.com",
-        "id": 10
-      },
-      {
-        "name": "jonathan",
-        "username": "jon",
-        "password": "jon",
-        "email": "jon@gmail.com",
-        "id": 11
-      }
-    ],
-    "party": [
-      {
-        "userId": 1,
-        "id": 1,
-        "name": "Fun Times at Ridgedale",
-        "streetAddress": "122 Northland Dr",
-        "zipcode": 37077,
-        "isPublic": false,
-        "ageRange": "25 to 30",
-        "date": "04-28-2919",
-        "time": "9pm"
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "isPublic": false,
-        "name": "Let's Drink Up",
-        "streetAddress": "1808 Button Blvd",
-        "zipcode": 37076,
-        "date": "04-29-2919",
-        "time": "10pm",
-        "ageRange": "over 21"
-      },
-      {
-        "id": 3,
-        "userId": 2,
-        "isPublic": false,
-        "name": "Divorce Time",
-        "streetAddress": "1245 Penn Lane",
-        "zipcode": 37076,
-        "date": "04-28-2919",
-        "time": "10pm",
-        "ageRange": "over 21"
-      },
-      {
-        "userId": 3,
-        "isPublic": false,
-        "name": "Test bitch",
-        "streetAddress": "1620 Crystal Spring Ln",
-        "zipcode": 37076,
-        "date": "2019-04-30",
-        "time": "00:00",
-        "ageRange": "over 21",
-        "id": 4
-      },
-      {
-        "userId": 1,
-        "id": 6,
-        "name": "testing the age range!!!!!",
-        "streetAddress": "ayyyyy lawd",
-        "zipcode": 12345,
-        "isPublic": false,
-        "ageRange": "over 21",
-        "date": "2016-08-29",
-        "time": "00:57"
-      },
-      {
-        "userId": 1,
-        "id": 7,
-        "name": "please",
-        "streetAddress": "check this shit out ",
-        "zipcode": 37076,
-        "isPublic": false,
-        "ageRange": "over 21",
-        "date": "2016-12-30",
-        "time": "23:59"
-      },
-      {
-        "userId": 1,
-        "id": 9,
-        "name": "checking for edit!",
-        "streetAddress": "hope it works",
-        "zipcode": 11111,
-        "isPublic": false,
-        "ageRange": "25 to 30",
-        "date": "2109-03-23",
-        "time": "12:23"
-      },
-      {
-        "userId": 7,
-        "id": 10,
-        "name": "mvp!",
-        "streetAddress": "mvp!",
-        "zipcode": 12345,
-        "isPublic": false,
-        "ageRange": "21 to 25",
-        "date": "2018-11-30",
-        "time": "12:59"
-      },
-      {
-        "userId": 7,
-        "isPublic": false,
-        "name": "heyyyyyy",
-        "streetAddress": "123 holla ave",
-        "zipcode": 12345,
-        "date": "2018-11-30",
-        "time": "23:58",
-        "ageRange": "under 21",
-        "id": 11
-      },
-      {
-        "userId": 7,
-        "isPublic": false,
-        "name": "Graduation",
-        "streetAddress": "1555 Erica Renee Court",
-        "zipcode": 62221,
-        "date": "2019-05-03",
-        "time": "12:00",
-        "ageRange": "under 21",
-        "id": 12
-      },
-      {
-        "userId": 9,
-        "id": 13,
-        "name": "Retirement!",
-        "streetAddress": "6 Loisel Dr",
-        "zipcode": 37087,
-        "isPublic": false,
-        "ageRange": "25 to 30",
-        "date": "2019-12-31",
-        "time": "12:59"
-      },
-      {
-        "userId": 3,
-        "isPublic": false,
-        "name": "divorce",
-        "streetAddress": "122 Northland Dr",
-        "zipcode": 62221,
-        "date": "2020-04-01",
-        "time": "13:00",
-        "ageRange": "25 to 30",
-        "id": 14
-      },
-      {
-        "userId": 1,
-        "isPublic": false,
-        "name": "session",
-        "streetAddress": "123 storage",
-        "zipcode": 12345,
-        "date": "2019-12-31",
-        "time": "12:59",
-        "ageRange": "under 21",
-        "id": 15
-      },
-      {
-        "userId": "11",
-        "id": 16,
-        "name": "Jameka is mean",
-        "streetAddress": "123 Jameka ln",
-        "zipcode": 37075,
-        "isPublic": false,
-        "ageRange": "21 to 25",
-        "date": "2019-05-13",
-        "time": "12:22"
-      }
-    ],
-    "attendee": [
-      {
-        "id": 1,
-        "userId": 4,
-        "partyId": 1
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "partyId": 1
-      },
-      {
-        "id": 3,
-        "userId": 1,
-        "partyId": 1
-      },
-      {
-        "id": 4,
-        "userId": 3,
-        "partyId": 1
-      },
-      {
-        "id": 5,
-        "userId": 4,
-        "partyId": 2
-      },
-      {
-        "id": 6,
-        "userId": 2,
-        "partyId": 4
-      },
-      {
-        "id": 7,
-        "userId": 1,
-        "partyId": 3
-      },
-      {
-        "id": 8,
-        "userId": 3,
-        "partyId": 2
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "name": "Jameka Echols",
+      "username": "jamekae",
+      "email": "jameka@gmail.com",
+      "password": "jameka"
+    },
+    {
+      "id": 2,
+      "name": "Delon Echols",
+      "username": "delona",
+      "email": "delon@gmail.com",
+      "password": "delon"
+    },
+    {
+      "id": 3,
+      "name": "Tyler Echols",
+      "username": "tylerc",
+      "email": "tyler@gmail.com",
+      "password": "tyler"
+    },
+    {
+      "id": 4,
+      "name": "Shawn Williams",
+      "username": "shawnw",
+      "email": "shawn@gmail.com",
+      "password": "shawn"
+    },
+    {
+      "id": 5,
+      "name": "DeSean Webster",
+      "username": "deseanr",
+      "email": "desean@gmail.com",
+      "password": "desean"
+    },
+    {
+      "name": "toby",
+      "username": "tobye",
+      "password": "toby",
+      "email": "toby@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "luke",
+      "username": "lukeq",
+      "password": "luke",
+      "email": "luke@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "kalen",
+      "username": "kalena",
+      "password": "kalen",
+      "email": "kalen@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "jenny",
+      "username": "jennye",
+      "password": "jenny",
+      "email": "jenny@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "chaffin",
+      "username": "chaffins",
+      "password": "chaffin",
+      "email": "chaffin@gmail.com",
+      "id": 10
+    },
+    {
+      "name": "jonathan",
+      "username": "jon",
+      "password": "jon",
+      "email": "jon@gmail.com",
+      "id": 11
+    }
+  ],
+  "party": [
+    {
+      "userId": "1",
+      "id": 1,
+      "name": "Fun Times at Ridgedale!!!!!",
+      "streetAddress": "122 Northland Dr",
+      "zipcode": 37077,
+      "isPublic": false,
+      "ageRange": "25 to 30",
+      "date": "04-28-2919",
+      "time": "9pm"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "isPublic": false,
+      "name": "Let's Drink Up",
+      "streetAddress": "1808 Button Blvd",
+      "zipcode": 37076,
+      "date": "04-29-2919",
+      "time": "10pm",
+      "ageRange": "over 21"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "isPublic": false,
+      "name": "Divorce Time",
+      "streetAddress": "1245 Penn Lane",
+      "zipcode": 37076,
+      "date": "04-28-2919",
+      "time": "10pm",
+      "ageRange": "over 21"
+    },
+    {
+      "userId": 3,
+      "isPublic": false,
+      "name": "Test bitch",
+      "streetAddress": "1620 Crystal Spring Ln",
+      "zipcode": 37076,
+      "date": "2019-04-30",
+      "time": "00:00",
+      "ageRange": "over 21",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "id": 6,
+      "name": "testing the age range!!!!!",
+      "streetAddress": "ayyyyy lawd",
+      "zipcode": 12345,
+      "isPublic": false,
+      "ageRange": "over 21",
+      "date": "2016-08-29",
+      "time": "00:57"
+    },
+    {
+      "userId": 1,
+      "id": 7,
+      "name": "please",
+      "streetAddress": "check this shit out ",
+      "zipcode": 37076,
+      "isPublic": false,
+      "ageRange": "over 21",
+      "date": "2016-12-30",
+      "time": "23:59"
+    },
+    {
+      "userId": 1,
+      "id": 9,
+      "name": "checking for edit!",
+      "streetAddress": "hope it works",
+      "zipcode": 11111,
+      "isPublic": false,
+      "ageRange": "25 to 30",
+      "date": "2109-03-23",
+      "time": "12:23"
+    },
+    {
+      "userId": 7,
+      "id": 10,
+      "name": "mvp!",
+      "streetAddress": "mvp!",
+      "zipcode": 12345,
+      "isPublic": false,
+      "ageRange": "21 to 25",
+      "date": "2018-11-30",
+      "time": "12:59"
+    },
+    {
+      "userId": 7,
+      "isPublic": false,
+      "name": "heyyyyyy",
+      "streetAddress": "123 holla ave",
+      "zipcode": 12345,
+      "date": "2018-11-30",
+      "time": "23:58",
+      "ageRange": "under 21",
+      "id": 11
+    },
+    {
+      "userId": 7,
+      "isPublic": false,
+      "name": "Graduation",
+      "streetAddress": "1555 Erica Renee Court",
+      "zipcode": 62221,
+      "date": "2019-05-03",
+      "time": "12:00",
+      "ageRange": "under 21",
+      "id": 12
+    },
+    {
+      "userId": 9,
+      "id": 13,
+      "name": "Retirement!",
+      "streetAddress": "6 Loisel Dr",
+      "zipcode": 37087,
+      "isPublic": false,
+      "ageRange": "25 to 30",
+      "date": "2019-12-31",
+      "time": "12:59"
+    },
+    {
+      "userId": 3,
+      "isPublic": false,
+      "name": "divorce",
+      "streetAddress": "122 Northland Dr",
+      "zipcode": 62221,
+      "date": "2020-04-01",
+      "time": "13:00",
+      "ageRange": "25 to 30",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "isPublic": false,
+      "name": "session",
+      "streetAddress": "123 storage",
+      "zipcode": 12345,
+      "date": "2019-12-31",
+      "time": "12:59",
+      "ageRange": "under 21",
+      "id": 15
+    },
+    {
+      "userId": "11",
+      "id": 16,
+      "name": "Jameka is mean",
+      "streetAddress": "123 Jameka ln",
+      "zipcode": 37075,
+      "isPublic": false,
+      "ageRange": "21 to 25",
+      "date": "2019-05-13",
+      "time": "12:22"
+    },
+    {
+      "userId": "1",
+      "isPublic": false,
+      "name": "",
+      "streetAddress": "",
+      "zipcode": 0,
+      "date": "",
+      "time": "",
+      "ageRange": "",
+      "id": 17
+    },
+    {
+      "userId": "1",
+      "isPublic": false,
+      "name": "jffjal;f",
+      "streetAddress": "jadsljfa",
+      "zipcode": 12345,
+      "date": "2020-05-03",
+      "time": "14:02",
+      "ageRange": "21 to 25",
+      "id": 18
+    }
+  ],
+  "attendee": [
+    {
+      "id": 1,
+      "userId": 4,
+      "partyId": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "partyId": 1
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "partyId": 1
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "partyId": 1
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "partyId": 2
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "partyId": 4
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "partyId": 3
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "partyId": 2
+    }
+  ]
+}

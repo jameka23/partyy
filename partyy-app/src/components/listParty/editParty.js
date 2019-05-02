@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import PartyManager from '../modules/partyManager'
-import { Button, Form } from 'reactstrap'
+import { Button } from 'reactstrap'
 
 class EditParty extends Component {
 
@@ -125,7 +125,7 @@ class EditParty extends Component {
                             id="partyAgeRange"
                             value={this.state.partyAgeRange}
                             onChange={(event) => { this.setState({ partyAgeRange: event.target.value }) }}
-                            open={this.state.open} onClose={this.handleClose} onOpen={this.handleOpen}
+                            open={this.state.open} onClose={this.handleClose}
                         >
                             {
                                 this.props.ageValues.map(age => (
