@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import './homepage.css'
 import { Card, Button } from 'reactstrap'
+import invite from './images/invitation.png'
+import dj from './images/dj.png'
+import vip from './images/vip.png'
+import eye from './images/eye-glasses.png'
+// import eye from './eye.svg '
 
 class Homepage extends Component {
 
@@ -16,47 +21,68 @@ class Homepage extends Component {
     }
 
     handleHostedParty = () => {
-        this.props.history.push('/listParties')   
+        this.props.history.push('/listParties')
     }
 
     handleSearchPary = () => {
-        this.props.history.push('/searchParty')   
+        this.props.history.push('/searchParty')
     }
 
     render() {
         return (
             <React.Fragment>
                 <Button
+                    className="logoutButton"
                     onClick={this.handleLogout}
                 >Logout</Button>
 
-                <div className="homepage--parent">
-                    <Card>
+                <div className="parent">
+                    <div className="homepage--parent">
                         <div className="homepage--firstChild">
-                            <Card>
-                                <Button onClick={this.handleThrowParty}>
+                            <div className="throwCard">
+                                {/* <Button onClick={this.handleThrowParty}>
                                     Throw Party
-                                </Button>
-                            </Card>
-                            <Card>
-                                <Button onClick={this.handleHostedParty}>
+                                </Button> */}
+                                <img src={invite}
+                                    className="throwImg"
+                                    alt="invite"
+                                    onClick={this.handleThrowParty} />
+                                <label className="throwLabel">Throw A Party</label>
+                            </div>
+                            <div className="djCard">
+                                {/* <Button onClick={this.handleHostedParty}>
                                     My Hosted Parties
-                                </Button>
-                            </Card>
+                                </Button> */}
+                                <img src={dj}
+                                    className="djImg"
+                                    alt="dj"
+                                    onClick={this.handleHostedParty} />
+                                <label className="hostLabel">My Hosted Parties</label>
+                            </div>
                         </div>
                         <div className="homepage--secondChild">
-                            <Card>
-                                <Button onClick={this.handleSearchPary}>
+                            <div className="eyeCard">
+                                {/* <Button onClick={this.handleSearchPary}>
                                     Search Party
-                                </Button>
-                            </Card>
-                            <Card>
-                                <Button>
+                                </Button> */}
+                                <img src={eye}
+                                    className="eyeImg"
+                                    alt="eye"
+                                    onClick={this.handleSearchPary} />
+                                <label className="searchLabel">Search Party</label>
+                            </div>
+                            <div className="vipCard">
+                                {/* <Button>
                                     Go Party
-                                </Button>
-                            </Card>
+                                </Button> */}
+                                <img src={vip}
+                                    className="vipImg"
+                                    alt="vip"
+                                />
+                                <label className="attendLabel">Attending Parties</label>
+                            </div>
                         </div>
-                    </Card>
+                    </div>
                 </div>
             </React.Fragment>
         )

@@ -53,7 +53,7 @@ class ThrowParty extends Component {
     }
 
     handleGoBack = () => {
-        this.props.history.push('/listParties')
+        this.props.history.push('/')
     }
 
     render() {

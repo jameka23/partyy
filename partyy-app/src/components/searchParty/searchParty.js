@@ -49,6 +49,9 @@ export default class SearchParty extends Component {
     render() {
         return (
             <React.Fragment>
+                <Button
+                    onClick={this.handleGoBack}
+                >Go Back</Button>
                 <div>
                     <input
                         id="searchZipcode"

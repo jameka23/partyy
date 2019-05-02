@@ -60,7 +60,7 @@ class ApplicationView extends Component {
                     parties: parties
                 })
             })
-            .then(() => this.props.history.push('/'))
+            .then(() => this.props.history.push('/listParties'))
     }
 
     // this function will edit a party that you have created
