@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
-import { Link } from 'react-router-dom'
 import './homepage.css'
 import { Card, Button } from 'reactstrap'
 
@@ -10,6 +9,18 @@ class Homepage extends Component {
     handleLogout = () => {
         sessionStorage.clear()
         this.props.history.push('/login')
+    }
+
+    handleThrowParty = () => {
+        this.props.history.push('/throwParty')
+    }
+
+    handleHostedParty = () => {
+        this.props.history.push('/listParties')   
+    }
+
+    handleSearchPary = () => {
+        this.props.history.push('/searchParty')   
     }
 
     render() {
@@ -23,19 +34,19 @@ class Homepage extends Component {
                     <Card>
                         <div className="homepage--firstChild">
                             <Card>
-                                <Button component={Link} to='/throwParty'>
+                                <Button onClick={this.handleThrowParty}>
                                     Throw Party
                                 </Button>
                             </Card>
                             <Card>
-                                <Button component={Link} to='/listParties'>
+                                <Button onClick={this.handleHostedParty}>
                                     My Hosted Parties
                                 </Button>
                             </Card>
                         </div>
                         <div className="homepage--secondChild">
                             <Card>
-                                <Button component={Link} to='/searchParty'>
+                                <Button onClick={this.handleSearchPary}>
                                     Search Party
                                 </Button>
                             </Card>
