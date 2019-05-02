@@ -1,0 +1,14 @@
+.homepage--parent{
+    display: flex;
+    flex-direction: row;
+    margin: 20%;
+    margin-top: 65%;
+}
+
+.homepage--firstChild{
+    flex-direction: row
+}
+
+.homepage--secondChild{
+    flex-direction: row
+}
