@@ -7,7 +7,6 @@ export default class Party extends Component {
             <React.Fragment>
                 <ApplicationViews />
             </React.Fragment>
-
         )
     }
 }

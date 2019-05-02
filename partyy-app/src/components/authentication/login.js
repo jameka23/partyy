@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
+import { Button } from 'reactstrap'
 
 class Login extends Component {
     state = {
@@ -59,12 +60,31 @@ class Login extends Component {
         return (
             <React.Fragment>
                 <form>
-                    <input
-                        placeholder="username"
-                        id="username"
-                        required
-                        onChange={this.handleFieldChange}
-                    />
+                    <div>
+                        <input
+                            placeholder="username"
+                            id="username"
+                            required
+                            onChange={this.handleFieldChange}
+                        />
+                    </div>
+                    <div>
+                        <input
+                            placeholder="password"
+                            id="password"
+                            type="password"
+                            required
+                            onChange={this.handleFieldChange}
+                        />
+                    </div>
+                    <div>
+                        <Button
+                            onClick={this.handleLogin}
+                        >Log In</Button>
+                        <Button
+                            onClick={this.handleSignUp}
+                        >Sign Up</Button>
+                    </div>
                 </form>
             </React.Fragment>
         )
