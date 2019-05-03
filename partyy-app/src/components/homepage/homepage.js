@@ -30,7 +30,7 @@ class Homepage extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <React.Fragment className="body">
                 <Button
                     className="logoutButton"
                     onClick={this.handleLogout}
@@ -57,7 +57,7 @@ class Homepage extends Component {
                                     className="djImg"
                                     alt="dj"
                                     onClick={this.handleHostedParty} />
-                                <label className="hostLabel">My Hosted Parties</label>
+                                <label className="hostLabel"><strong>My Hosted Parties</strong></label>
                             </div>
                         </div>
                         <div className="homepage--secondChild">

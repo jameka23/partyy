@@ -1,26 +1,26 @@
 .parent{
-    margin-top: 30%;
-    border: 2px solid purple;
+    margin-top: 20%;
+    /* border: 2px solid purple; */
 }
 
 .homepage--parent{
     margin: 20%;
     margin-top: 30%;
-    border: black solid 1px;
+    /* border: black solid 1px; */
 }
 
 .homepage--firstChild{
     display: flex;
     flex-direction: row;
     margin: 25px;
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 
 .homepage--secondChild{
     display: flex;
     flex-direction: row;
     margin: 25px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 img{
@@ -31,4 +31,16 @@ img{
 .eyeCard .vipCard{
     margin: 55%;
     margin-bottom: 50px;
+}
+
+label{
+    text-align: center;
+    font-weight: bold;
+}
+
+.djImg ,.vipImg{
+    margin-left: 5%;
+}
+.body{
+    background-color: #00bbd3;
 }
