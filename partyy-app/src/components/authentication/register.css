@@ -1,0 +1,33 @@
+.backIcon{
+    height: 65px;
+    width: 65px;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.regIcon{
+    height: 220px;
+    width: 295px;
+    margin-top:12%;
+    margin-left: 5%;
+}
+
+.regForm{
+    margin-top: 5%;
+    margin-left: 24%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.signBtn{
+    /* align-content: center; */
+    /* border: 1px solid yellow; */
+    padding-left: 18%;
+    margin-top: 5%;
+}
+
+.inputField{
+    margin: 3% 3%;
+}
