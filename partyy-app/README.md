@@ -1,68 +1,93 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# pArTyy!
 
-## Available Scripts
+Welcome to pArTyy! app. Are you a one person wolf pack? Need friends? Then that's exactly what _pArTyy!_ is, an application that allows users to do one of the following: 
++ 1. create parties that you can set to public/private and invite users
++ 2. find local parties that are public to the general public
 
-In the project directory, you can run:
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+These instructions will get you a copy of the project up and running on your local machine
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Installing
 
-### `npm test`
+First, you'll need to clone down the repo into a directory. Open your terminal and enter
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone git@github.com:jameka23/partyy.git
+```
 
-### `npm run build`
+After that, open up your editor. You're going to need to do the following:
+You need to be in the main part of the app by entering in:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd partyy-app
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Since we will be using fake data at the time, database.json has been set up for you, go to your terminal, enter the command
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+cd api
+```
 
-### `npm run eject`
+You will need to run the local json-server, run the command
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+json-server -p 5002 -w database.json
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Before we run the application, you must run the command for the React app. In the terminal, run the following command to go back to the main directory
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+cd ..
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Then enter the following command to start using the application
 
-## Learn More
+```
+npm start
+```
+Your terminal should look similar to this, with no read errors: 
+![grunt example]()
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The next thing to do is head over to your browser. Since this application was to mimic a mobile app, the best experience is to user Xcode's Simulator or use the Chrome Dev Tools and choose a mobile view.
 
-### Code Splitting
+If you using, Xcode's Simulator, open up Safari or Chrome on the simulator then enter in the following url and press enter 
+```
+http://localhost:3000
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+###### You are now ready to use pArTyy!. 
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## First Time User instructions
+* The first thing you have to do is register as new user otherwise you will not be able to use pArTyy!
+* Once registered, you are now able to use the application
+* Since there are only a few parties in the database, you need create a party.
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### I hope you enjoyed my app! :)
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Built With
 
-### Deployment
+* [react.js](https://reactjs.org/) - The framework used
+* [reactstrap](https://reactstrap.github.io/) - Particular styling
+* [CSS](https://css-tricks.com/) - Main styling
+* [Bootstrap4.3](https://getbootstrap.com/) - Used for some styling
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Authors
+
+* **Jameka Echols** 
+
+
+
+
+## Acknowledgments
+
+* [FlatIcon](www.flaticon.com)- Icon made by Freepik
+* [Freepik](http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank") - CC 3.0 BY
+* [PurpleBooth](https://gist.githubusercontent.com/PurpleBooth/109311bb0361f32d87a2/raw/8254b53ab8dcb18afc64287aaddd9e5b6059f880/README-Template.md) - For their template
