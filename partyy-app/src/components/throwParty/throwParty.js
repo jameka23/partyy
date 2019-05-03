@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { Button} from 'reactstrap'
 
+// this is styling that will override reactstrap styling
+
+
+
 class ThrowParty extends Component {
 
     state = {
@@ -67,6 +71,7 @@ class ThrowParty extends Component {
                     </div>
                     <section>
                         <input
+                            className="nameInput"
                             id="name" 
                             name="name"
                             placeholder=" Party Name"
@@ -77,6 +82,7 @@ class ThrowParty extends Component {
                             id="streetAddress" 
                             name="streetAddress"
                             required
+                            className="addyInput"
                             placeholder="Street Address"
                             onChange={this.handleFieldChange}
                         />
@@ -85,6 +91,7 @@ class ThrowParty extends Component {
                             type="number"
                             maxLength="5"
                             name="zipcode"
+                            className="zipInput"
                             required
                             placeholder="Zipcode"
                             onChange={this.handleFieldChange}

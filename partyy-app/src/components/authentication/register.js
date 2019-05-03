@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { Button } from 'reactstrap'
+import './register.css'
+import reg from './register.png'
+import back from './back.png'
 
 class Register extends Component{
     state = {
@@ -44,12 +47,27 @@ class Register extends Component{
     render(){
         return(
             <React.Fragment>
-                <form>
+                <div>
+                    <img 
+                        src={back}
+                        alt="back arrow"
+                        className="backIcon"
+                    />
+                </div>
+                <div>
+                    <img 
+                        src={reg}
+                        alt="register.png"
+                        className="regIcon"
+                    />
+                </div>
+                <form className="regForm">
                     <div>
                         <input 
                             required
                             placeholder="name"
                             id="name"
+                            className="inputField"
                             value={this.state.name}
                             onChange={this.handleFieldChange}
                         />
@@ -59,6 +77,7 @@ class Register extends Component{
                             required
                             placeholder="username"
                             id="username"
+                            className="inputField"
                             value={this.state.username}
                             onChange={this.handleFieldChange}                        
                         />
@@ -68,6 +87,7 @@ class Register extends Component{
                             type="password"
                             required
                             placeholder="password"
+                            className="inputField"
                             id="password"
                             value={this.state.password}
                             onChange={this.handleFieldChange}
@@ -80,10 +100,11 @@ class Register extends Component{
                             placeholder="email"
                             id="email"
                             value={this.state.email}
+                            className="inputField"
                             onChange={this.handleFieldChange}                        
                         />
                     </div>
-                    <div>
+                    <div className="signBtn">
                         <Button
                             onClick={this.handleSignUp}
                         >Sign Up</Button>
