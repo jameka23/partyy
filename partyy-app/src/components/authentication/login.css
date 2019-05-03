@@ -1,0 +1,49 @@
+.logo {
+    height: 200px;
+    width: 275px;
+    margin-top:10%;
+    margin-left: -13.5%;
+}
+
+.loginForm {
+    margin-top: 22%;
+    margin-left: 27%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.passInput, .userInput {
+    outline: 0;
+    /* border-bottom: 2px solid black; */
+    background: transparent;
+    border: 2px solid rgb(194, 58, 233);
+}
+
+.userInput{
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+.passInput{
+    margin-bottom: 4%;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: black;
+}
+
+input:focus {
+    border-color: black;
+}
+
+.buttonLogin{
+    margin-left: 5%;
+}
+
+.loginBtn{
+    margin-right: 2%;
+    background-color: blue;
+}

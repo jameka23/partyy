@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import './homepage.css'
-import { Button } from 'reactstrap'
+// import { Button } from 'reactstrap'
 import invite from './images/invitation.png'
 import dj from './images/dj.png'
 import vip from './images/vip.png'
 import eye from './images/eye-glasses.png'
-import arrow from './images/left-arrow.png'
+import exit from './images/exit.png'
 
 class Homepage extends Component {
 
@@ -30,15 +30,15 @@ class Homepage extends Component {
 
     render() {
         return (
-            <React.Fragment className="body">
+            <React.Fragment>
                 {/* <Button
                     className="logoutButton"
                     onClick={this.handleLogout}
                 >Logout</Button> */}
                 <img 
-                    src={arrow}
-                    alt="backArrow"
-                    className="backArrow"
+                    src={exit}
+                    alt="exit"
+                    className="exit"
                     onClick= {this.handleLogout}
                 />
                 <div className="parent">
