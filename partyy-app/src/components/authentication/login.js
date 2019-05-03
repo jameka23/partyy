@@ -2,6 +2,19 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { Button } from 'reactstrap'
 import './login.css'
+import logo from './logo4.png'
+
+// this is the styling for reactstrap buttons 
+const BtnStyle = {
+    color: 'black',
+    backgroundColor: '#9162e4'
+}
+
+
+const SignBtn = {
+    color: 'black',
+    backgroundColor: '#62eeff'
+}
 
 class Login extends Component {
     state = {
@@ -25,7 +38,7 @@ class Login extends Component {
 
         // set user to a variable and the .find() will return the user that was found, meaning they are a registerd user
         let user = this.props.users.find(user => {
-            return user.username === this.state.username && user.password === this.state.password
+            return user.username === this.state.username.toLowerCase() && user.password === this.state.password
         })
 
         // checks that all the inputs are not empty and or if the the user enters the correct information
@@ -53,19 +66,27 @@ class Login extends Component {
         this.props.history.push('/register') // if the user presses the sign up button, then they should be redirected to the register page
     }
 
-
     render() {
         // clear the session from the previous user
         sessionStorage.clear()
 
         return (
             <React.Fragment>
-                <form>
+                <form className="loginForm">
+                    <div>
+                        <img
+                            src={logo}
+                            alt="logo"
+                            className="logo"
+                        />
+                    </div>
                     <div>
                         <input
+                            type="text"
                             placeholder="username"
                             id="username"
                             required
+                            className="userInput"
                             onChange={this.handleFieldChange}
                         />
                     </div>
@@ -75,14 +96,19 @@ class Login extends Component {
                             id="password"
                             type="password"
                             required
+                            className="passInput"
                             onChange={this.handleFieldChange}
                         />
                     </div>
-                    <div>
+                    <div className="buttonLogin">
                         <Button
+                            style={BtnStyle}
+                            className="loginBtn"
                             onClick={this.handleLogin}
                         >Log In</Button>
                         <Button
+                            style={SignBtn}
+                            className="signUpBtn"
                             onClick={this.handleSignUp}
                         >Sign Up</Button>
                     </div>

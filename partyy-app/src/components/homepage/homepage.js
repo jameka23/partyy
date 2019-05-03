@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import './homepage.css'
-import { Button } from 'reactstrap'
+// import { Button } from 'reactstrap'
 import invite from './images/invitation.png'
 import dj from './images/dj.png'
 import vip from './images/vip.png'
