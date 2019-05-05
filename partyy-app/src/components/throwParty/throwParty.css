@@ -1,6 +1,6 @@
 .throwForm{
     margin-top: 5%;
-    margin-left: 24%;
+    margin-left: 25%;
     justify-content: center;
     display: flex;
     align-content: center;
@@ -26,4 +26,21 @@
 
 label{
     align-items: center;
+}
+
+.throwPic{
+    height: 215px;
+    width: 295px;
+    margin-top:5%;
+    /* margin-right: 20%; */
+    margin-left: -23%;
+    margin-bottom: 2%
+}
+
+.inputs{
+    margin: 3% 3%;
+}
+
+.saveBtn{
+    margin-top: 3%;
 }

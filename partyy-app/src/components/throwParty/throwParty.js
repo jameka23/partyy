@@ -3,7 +3,7 @@ import { withRouter } from 'react-router'
 import { Button } from 'reactstrap'
 import './throwParty.css'
 import home from './home.png';
-import throw from './throw.png';
+import throwImg from './throw.png';
 // this is styling that will override reactstrap styling
 
 
@@ -79,7 +79,7 @@ class ThrowParty extends Component {
                 <form className="throwForm">
                     <div>
                         <img 
-                            src={throw}
+                            src={throwImg}
                             alt="throwImg"
                             className="throwPic"
                         />
@@ -87,7 +87,7 @@ class ThrowParty extends Component {
 
                     <div>
                         <input
-                            className="nameInput"
+                            className="nameInput inputs"
                             id="name"
                             name="name"
                             placeholder=" Party Name"
@@ -100,7 +100,7 @@ class ThrowParty extends Component {
                             id="streetAddress"
                             name="streetAddress"
                             required
-                            className="addyInput"
+                            className="addyInput inputs"
                             placeholder="Street Address"
                             onChange={this.handleFieldChange}
                         />
@@ -111,7 +111,7 @@ class ThrowParty extends Component {
                             type="number"
                             maxLength="5"
                             name="zipcode"
-                            className="zipInput"
+                            className="zipInput inputs"
                             required
                             placeholder="Zipcode"
                             onChange={this.handleFieldChange}
@@ -151,7 +151,7 @@ class ThrowParty extends Component {
                             </select>
                         </div>
                     </div>
-                    <div>
+                    <div className="saveBtn">
                         <Button
                             type="submit"
                             onClick={this.constructNewParty}
