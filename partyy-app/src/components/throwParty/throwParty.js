@@ -69,9 +69,6 @@ class ThrowParty extends Component {
         return (
             <React.Fragment>
                 <div>
-                    {/* <Button
-                            onClick={this.handleGoBack}
-                        >Go Back</Button> */}
                     <img
                         className="home"
                         src={home}
