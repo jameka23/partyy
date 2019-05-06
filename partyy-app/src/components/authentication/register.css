@@ -6,10 +6,11 @@
 }
 
 .regIcon{
-    height: 220px;
-    width: 295px;
+    height: 295px;
+    width: 350px;
     margin-top:12%;
-    margin-left: 5%;
+    margin-left: 8%;
+    margin-bottom: -13%;
 }
 
 .regForm{
@@ -26,6 +27,18 @@
     /* border: 1px solid yellow; */
     padding-left: 18%;
     margin-top: 5%;
+}
+
+input{
+    margin: 5% 5%;
+    outline: 0;
+    border-color: rgb(94, 172, 90);
+    /* border-bottom: 2px solid rgb(126, 81, 201); */
+    background: transparent;
+}
+
+input:focus{
+    border-color: rgb(126, 81, 201);
 }
 
 .inputField{

@@ -3,13 +3,14 @@ import { withRouter } from 'react-router'
 import { Button } from 'reactstrap'
 import './throwParty.css'
 import home from './home.png';
-import throwImg from './throw.png';
+import throwImg from './throw1.png';
+
+
 // this is styling that will override reactstrap styling
 const saveBtnStyle = {
     color: 'black',
-    backgroundColor: 'rgb(255,202,135)'
+    backgroundColor: 'rgb(106,138,245)'
 }
-
 
 class ThrowParty extends Component {
 
@@ -87,7 +88,7 @@ class ThrowParty extends Component {
 
                     <div>
                         <input
-                            className="nameInput inputs"
+                            className="nameInput  override inputs"
                             id="name"
                             name="name"
                             placeholder=" Party Name"
@@ -100,7 +101,7 @@ class ThrowParty extends Component {
                             id="streetAddress"
                             name="streetAddress"
                             required
-                            className="addyInput inputs"
+                            className="addyInput override inputs"
                             placeholder="Street Address"
                             onChange={this.handleFieldChange}
                         />
@@ -111,13 +112,13 @@ class ThrowParty extends Component {
                             type="number"
                             maxLength="5"
                             name="zipcode"
-                            className="zipInput inputs"
+                            className="zipInput override inputs"
                             required
                             placeholder="Zipcode"
                             onChange={this.handleFieldChange}
                         />
                     </div>
-                    <div className=" timedLabel labeled">
+                    <div className=" timedLabel labeled1">
                         {/* <label
                             className="dateLabel"
                             >Date</label><br /> */}
@@ -125,15 +126,17 @@ class ThrowParty extends Component {
                             id="date"
                             type="text"
                             placeholder="Date"
+                            className="override"
                             onChange={this.handleFieldChange}
                         />
                     </div>
-                    <div className="labeled">
+                    <div className="labeled2">
                         {/* <label>Time</label><br /> */}
                         <input
                             placeholder="Time"
                             id="time"
                             type="text"
+                            className="override"
                             onChange={this.handleFieldChange}
                         />
                     </div>

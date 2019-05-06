@@ -1,8 +1,9 @@
 .logo {
-    height: 200px;
-    width: 275px;
-    margin-top:10%;
-    margin-left: -13.5%;
+    height: 290px;
+    width: 320px;
+    margin-top:5%;
+    margin-left: -20%;
+    margin-bottom: -25%;
 }
 
 .loginForm {
@@ -18,7 +19,7 @@
     outline: 0;
     /* border-bottom: 2px solid black; */
     background: transparent;
-    border: 2px solid rgb(194, 58, 233);
+    border: 2px solid rgb(193, 84, 192);
 }
 
 .userInput{

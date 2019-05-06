@@ -1,0 +1,48 @@
+.back{
+    height: 65px;
+    width: 65px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.editLogo{
+    height: 220px;
+    width: 290px;
+    margin-bottom: -15%;
+    margin-left: 10%;
+}
+
+.editForm{
+    margin-left: 23%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs{
+    outline: 0;
+    border-bottom: 2px solid rgb(199, 254, 103);
+    background: transparent;
+}
+
+.inputs:focus{
+    border-color: rgb(0, 85, 245);
+}
+
+.selection{
+    margin-left: 5%;
+}
+
+.ageLabeled{
+    margin-left: 13%;
+}
+
+.ageSelection{
+    margin-left: 11%;
+    margin-bottom: 5%;
+}
+
+.editSaveBtn{
+    margin-left: 39%;
+}
