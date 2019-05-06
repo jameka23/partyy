@@ -5,7 +5,10 @@ import './throwParty.css'
 import home from './home.png';
 import throwImg from './throw.png';
 // this is styling that will override reactstrap styling
-
+const saveBtnStyle = {
+    color: 'black',
+    backgroundColor: 'rgb(255,202,135)'
+}
 
 
 class ThrowParty extends Component {
@@ -119,7 +122,9 @@ class ThrowParty extends Component {
                     </div>
                     <div className="labeledInputs">
                         <div>
-                            <label>Date</label><br />
+                            <label
+                            className="dateLabel"
+                            >Date</label><br />
                             <input
                                 id="date"
                                 type="date"
@@ -153,6 +158,7 @@ class ThrowParty extends Component {
                     </div>
                     <div className="saveBtn">
                         <Button
+                            style={saveBtnStyle }
                             type="submit"
                             onClick={this.constructNewParty}
                         >

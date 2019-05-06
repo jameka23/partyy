@@ -10,3 +10,34 @@
     margin-bottom: 5%;
     box-shadow: 45%;
 }
+
+.card {
+    margin: 2% 10%;
+    /* padding-left:5% */
+}
+
+.home{
+    margin-bottom: 5%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.listPartyBtns{
+    margin-left: 20%;
+    margin-top: 6%;
+}
+
+.editBtn{
+    margin-right: 5%;
+}
+
+.innerCardText{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10%;
+}
