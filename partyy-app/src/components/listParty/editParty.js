@@ -112,9 +112,11 @@ class EditParty extends Component {
                         <input
                             id="partyDate"
                             type="date"
+                            value={this.state.date}
                             onChange={this.handleFieldChange}
                         />
                         <input
+                            value={this.state.time}
                             id="partyTime"
                             type="time"
                             onChange={this.handleFieldChange}

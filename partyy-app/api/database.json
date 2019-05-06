@@ -83,7 +83,7 @@
       "userId": "1",
       "id": 1,
       "name": "Fun Times at Ridgedale!!!!!",
-      "streetAddress": "122 Northland Dr",
+      "streetAddress": "122 Northland Drive",
       "zipcode": 37077,
       "isPublic": false,
       "ageRange": "25 to 30",
@@ -122,17 +122,6 @@
       "time": "00:00",
       "ageRange": "over 21",
       "id": 4
-    },
-    {
-      "userId": 1,
-      "id": 6,
-      "name": "testing the age range!!!!!",
-      "streetAddress": "ayyyyy lawd",
-      "zipcode": 12345,
-      "isPublic": false,
-      "ageRange": "over 21",
-      "date": "2016-08-29",
-      "time": "00:57"
     },
     {
       "userId": 1,
@@ -232,17 +221,6 @@
       "ageRange": "21 to 25",
       "date": "2019-05-13",
       "time": "12:22"
-    },
-    {
-      "userId": "1",
-      "isPublic": false,
-      "name": "",
-      "streetAddress": "",
-      "zipcode": 0,
-      "date": "",
-      "time": "",
-      "ageRange": "",
-      "id": 17
     },
     {
       "userId": "1",

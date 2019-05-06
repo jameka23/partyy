@@ -44,6 +44,9 @@ class Register extends Component{
         this.setState(stateToChange)
     }
 
+    handleGoBack = () => {
+        this.props.history.push('/login')
+    }
     render(){
         return(
             <React.Fragment>
@@ -52,6 +55,7 @@ class Register extends Component{
                         src={back}
                         alt="back arrow"
                         className="backIcon"
+                        onClick={this.handleGoBack}
                     />
                 </div>
                 <div>

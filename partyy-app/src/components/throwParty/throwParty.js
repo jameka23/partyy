@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
-import { Button} from 'reactstrap'
-
+import { Button } from 'reactstrap'
+import './throwParty.css'
+import home from './home.png';
+import throwImg from './throw.png';
 // this is styling that will override reactstrap styling
-
+const saveBtnStyle = {
+    color: 'black',
+    backgroundColor: 'rgb(255,202,135)'
+}
 
 
 class ThrowParty extends Component {
@@ -63,69 +68,103 @@ class ThrowParty extends Component {
     render() {
         return (
             <React.Fragment>
-                <form>
-                    <div>
-                        <Button
+                <div>
+                    {/* <Button
                             onClick={this.handleGoBack}
-                        >Go Back</Button>
+                        >Go Back</Button> */}
+                    <img
+                        className="home"
+                        src={home}
+                        alt="home"
+                        onClick={this.handleGoBack}
+                    />
+                </div>
+                <form className="throwForm">
+                    <div>
+                        <img 
+                            src={throwImg}
+                            alt="throwImg"
+                            className="throwPic"
+                        />
                     </div>
-                    <section>
+
+                    <div>
                         <input
-                            className="nameInput"
-                            id="name" 
+                            className="nameInput inputs"
+                            id="name"
                             name="name"
                             placeholder=" Party Name"
                             autoFocus
                             required
                             onChange={this.handleFieldChange} />
+                    </div>
+                    <div>
                         <input
-                            id="streetAddress" 
+                            id="streetAddress"
                             name="streetAddress"
                             required
-                            className="addyInput"
+                            className="addyInput inputs"
                             placeholder="Street Address"
                             onChange={this.handleFieldChange}
                         />
+                    </div>
+                    <div>
                         <input
                             id="zipcode"
                             type="number"
                             maxLength="5"
                             name="zipcode"
-                            className="zipInput"
+                            className="zipInput inputs"
                             required
                             placeholder="Zipcode"
                             onChange={this.handleFieldChange}
                         />
-                        <input
-                            id="date"
-                            type="date"
-                            onChange={this.handleFieldChange}
-                        />
-                        <input
-                            id="time"
-                            type="time"
-                            onChange={this.handleFieldChange}
-                        />
-                        <label>Age Range</label>
-                        <select
-                            name="ageRange"
-                            id="ageRange"
-                            onChange={this.handleFieldChange}
-                            open={this.state.open} onClose={this.handleClose}
-                        >
-                            {
-                                this.props.ageValues.map(age => (
-                                    <option key={age.id} id={age.value} value={age.value}>{age.value}</option>
-                                ))
-                            }
-                        </select>
+                    </div>
+                    <div className="labeledInputs">
+                        <div>
+                            <label
+                            className="dateLabel"
+                            >Date</label><br />
+                            <input
+                                id="date"
+                                type="date"
+                                onChange={this.handleFieldChange}
+                            />
+                        </div>
+                        <div>
+                            <label>Time</label><br />
+                            <input
+                                id="time"
+                                type="time"
+                                onChange={this.handleFieldChange}
+                            />
+                        </div>
+                        <div>
+                            <label>Age Range</label>
+                            <br />
+                            <select
+                                name="ageRange"
+                                id="ageRange"
+                                onChange={this.handleFieldChange}
+                                open={this.state.open} onClose={this.handleClose}
+                            >
+                                {
+                                    this.props.ageValues.map(age => (
+                                        <option key={age.id} id={age.value} value={age.value}>{age.value}</option>
+                                    ))
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div className="saveBtn">
                         <Button
+                            style={saveBtnStyle }
                             type="submit"
                             onClick={this.constructNewParty}
                         >
                             Save
-                        </Button>
-                    </section>
+                            </Button>
+                    </div>
                 </form>
             </React.Fragment>
         )
