@@ -13,8 +13,8 @@ const BtnStyle = {
 
 const SignBtn = {
     color: 'black',
-    // backgroundColor: '#62eeff'
-    backgroundColor: 'rgb(0,175,169)'
+    backgroundColor: '#62eeff'
+    // backgroundColor: 'rgb(0,175,169)'
 }
 
 class Login extends Component {

@@ -235,14 +235,14 @@
     },
     {
       "userId": "1",
-      "id": 19,
-      "name": "Test",
-      "streetAddress": "122 Highland Blvd",
-      "zipcode": 36254,
+      "id": 20,
+      "name": "Testing this after style!!!!",
+      "streetAddress": "987 Lame Guy Dr",
+      "zipcode": 12345,
       "isPublic": false,
-      "ageRange": "25 to 30",
-      "date": "2019-05-06",
-      "time": "23:00"
+      "ageRange": "over 21",
+      "date": "May 23rd",
+      "time": "9pm "
     }
   ],
   "attendee": [

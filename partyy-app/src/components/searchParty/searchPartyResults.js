@@ -22,13 +22,13 @@ export default class SearchPartyResults extends Component {
                             .filter(party => (party.ageRange == this.props.searchAgeRange))
                             .map(party => (
                                 <Card className="searchCard" style={cardStyle}>
+                                        <CardTitle className="title">{party.name}</CardTitle>
                                     <div key={party.id}>
-                                        <CardTitle>{party.name}</CardTitle>
-                                        <CardText>{party.streetAddress}</CardText>
-                                        <CardText>{party.zipcode}</CardText>
-                                        <CardText>{party.date}</CardText>
-                                        <CardText>{party.time}</CardText>
-                                        <CardText>{party.ageRange}</CardText>
+                                        <CardText>Address: {party.streetAddress}</CardText>
+                                        <CardText>Zipcode: {party.zipcode}</CardText>
+                                        <CardText>Date: {party.date}</CardText>
+                                        <CardText>Time: {party.time}</CardText>
+                                        <CardText>Age Range: {party.ageRange}</CardText>
                                     </div>
                                 </Card>
                             ))

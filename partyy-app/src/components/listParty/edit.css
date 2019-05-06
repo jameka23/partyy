@@ -46,3 +46,8 @@
 .editSaveBtn{
     margin-left: 39%;
 }
+
+select{
+    color: black;
+    background-color: rgb(1, 222, 248);
+}
