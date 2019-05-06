@@ -34,7 +34,7 @@ class EditParty extends Component {
     // this function will create the edited party
     constructEditedParty = event => {
         event.preventDefault() // keeps from having the page go elsewhere 
-
+        console.log(typeof(this.state.partyDate))
         if (this.state.partyZipCode === "") {
             window.alert("Please enter a zip code!")
         } else {

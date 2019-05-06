@@ -124,7 +124,7 @@
       "id": 4
     },
     {
-      "userId": 1,
+      "userId": "1",
       "id": 7,
       "name": "please",
       "streetAddress": "check this shit out ",
@@ -232,6 +232,17 @@
       "time": "14:02",
       "ageRange": "21 to 25",
       "id": 18
+    },
+    {
+      "userId": "1",
+      "id": 19,
+      "name": "Test",
+      "streetAddress": "122 Highland Blvd",
+      "zipcode": 36254,
+      "isPublic": false,
+      "ageRange": "25 to 30",
+      "date": "2019-05-06",
+      "time": "23:00"
     }
   ],
   "attendee": [

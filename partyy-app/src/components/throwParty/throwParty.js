@@ -81,7 +81,7 @@ class ThrowParty extends Component {
                 </div>
                 <form className="throwForm">
                     <div>
-                        <img 
+                        <img
                             src={throwImg}
                             alt="throwImg"
                             className="throwPic"
@@ -120,45 +120,46 @@ class ThrowParty extends Component {
                             onChange={this.handleFieldChange}
                         />
                     </div>
-                    <div className="labeledInputs">
-                        <div>
-                            <label
+                    <div className=" timedLabel labeled">
+                        {/* <label
                             className="dateLabel"
-                            >Date</label><br />
-                            <input
-                                id="date"
-                                type="date"
-                                onChange={this.handleFieldChange}
-                            />
-                        </div>
-                        <div>
-                            <label>Time</label><br />
-                            <input
-                                id="time"
-                                type="time"
-                                onChange={this.handleFieldChange}
-                            />
-                        </div>
-                        <div>
-                            <label>Age Range</label>
-                            <br />
-                            <select
-                                name="ageRange"
-                                id="ageRange"
-                                onChange={this.handleFieldChange}
-                                open={this.state.open} onClose={this.handleClose}
-                            >
-                                {
-                                    this.props.ageValues.map(age => (
-                                        <option key={age.id} id={age.value} value={age.value}>{age.value}</option>
-                                    ))
-                                }
-                            </select>
-                        </div>
+                            >Date</label><br /> */}
+                        <input
+                            id="date"
+                            type="text"
+                            placeholder="Date"
+                            onChange={this.handleFieldChange}
+                        />
+                    </div>
+                    <div className="labeled">
+                        {/* <label>Time</label><br /> */}
+                        <input
+                            placeholder="Time"
+                            id="time"
+                            type="text"
+                            onChange={this.handleFieldChange}
+                        />
+                    </div>
+                    <div>
+                        <label className="ageLabel">Age Range</label>
+                        <br />
+                        <select
+                            className="ageSelect"
+                            name="ageRange"
+                            id="ageRange"
+                            onChange={this.handleFieldChange}
+                            open={this.state.open} onClose={this.handleClose}
+                        >
+                            {
+                                this.props.ageValues.map(age => (
+                                    <option key={age.id} id={age.value} value={age.value}>{age.value}</option>
+                                ))
+                            }
+                        </select>
                     </div>
                     <div className="saveBtn">
                         <Button
-                            style={saveBtnStyle }
+                            style={saveBtnStyle}
                             type="submit"
                             onClick={this.constructNewParty}
                         >
