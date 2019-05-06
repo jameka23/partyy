@@ -2,18 +2,19 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { Button } from 'reactstrap'
 import './login.css'
-import logo from './logo4.png'
+import logo from './logo5.png'
 
 // this is the styling for reactstrap buttons 
 const BtnStyle = {
     color: 'black',
-    backgroundColor: '#9162e4'
+    backgroundColor: 'rgb(193,84,192)'
 }
 
 
 const SignBtn = {
     color: 'black',
     backgroundColor: '#62eeff'
+    // backgroundColor: 'rgb(0,175,169)'
 }
 
 class Login extends Component {

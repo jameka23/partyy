@@ -90,4 +90,6 @@ http://localhost:3000
 
 * [FlatIcon](www.flaticon.com)- Icon made by Freepik
 * [Freepik](http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank") - CC 3.0 BY
+* [Darius_Dan](https://www.flaticon.com/authors/darius-dan" title="Darius Dan") - FlatIcon Author
+* [Kiranshastry](https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry") - FlatIcon Author
 * [PurpleBooth](https://gist.githubusercontent.com/PurpleBooth/109311bb0361f32d87a2/raw/8254b53ab8dcb18afc64287aaddd9e5b6059f880/README-Template.md) - For their template

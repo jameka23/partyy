@@ -6,6 +6,7 @@ import {
 } from 'reactstrap'
 import './listParty.css'
 import home from './home.png'
+import host from './host1.png'
 
 // this function will do an override on reactstrap's css
 const cardStyle = {
@@ -37,6 +38,13 @@ class ListParty extends Component {
                         onClick={this.handleGoBack}
                     />
                 </div>
+                <div>
+                    <img 
+                        src={host}
+                        alt="host"
+                        className="host"
+                    />
+                </div>
                 <div className="party--container">
                     {
                         this.props.parties.filter(party => party.user.id === Number(sessionStorage.getItem("userId")))
@@ -64,7 +72,7 @@ class ListParty extends Component {
                                                 className="deleteBtn"
                                                 size="small"
                                                 onClick={() => {
-                                                    const deleteConfrim = window.confirm(`Are you sure you want to delete ${party.name} party?`)
+                                                    const deleteConfrim = window.confirm(`Are you sure you want to delete ${party.name} party and be a party pooper?`)
                                                     if (deleteConfrim) {
                                                         this.props.deleteParty(party.id)
                                                     }

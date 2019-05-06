@@ -11,6 +11,7 @@
     height: 55px;
     width: 55px;
     /* margin-left: 33%; */
+    /* margin-bottom: -10%; */
     margin-top: 3%;
     margin-left: 83%;
 }
@@ -24,24 +25,53 @@
     margin-right: 37%;
 }
 
-/* label{
-    align-items: center; 
-} */
-
-.throwPic{
-    height: 215px;
-    width: 295px;
-    margin-top:5%;
-    /* margin-right: 20%; */
-    margin-left: -23%;
-    margin-bottom: 2%
+.ageLabel{
+    margin-left: 20%;
 }
 
-.inputs{
+.ageSelect{
+    margin-left: 17%;
+}
+
+.timedLabel{
+    margin-top: 3%
+}
+
+.throwPic{
+    height: 295px;
+    width: 330px;
+    margin-top:-8%;
+    /* margin-right: 20%; */
+    margin-left: -23%;
+    margin-bottom: -20%
+}
+
+.inputs {
     margin: 3% 3%;
 }
 
+.labeled1{
+    margin-top: -1%;
+}
+
+input, .override{
+    margin: 5% 5%;
+    /* outline: 0; */
+    /* border-color: rgb(65, 83, 244); */
+    border-color: rgb(255,47,203); 
+    border-bottom: 2px solid rgb(244, 247, 89);
+    background: transparent;
+}
+
+input:focus{
+    border-color: rgb(255,47,203); 
+}
 .saveBtn{
-    margin-top: 3%;
-    margin-left: 20%;
+    margin-top: 4%;
+    margin-left: 23%;
+}
+
+select{
+    color: black;
+    background-color: blue;
 }

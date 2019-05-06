@@ -3,13 +3,14 @@ import { withRouter } from 'react-router'
 import { Button } from 'reactstrap'
 import './throwParty.css'
 import home from './home.png';
-import throwImg from './throw.png';
+import throwImg from './throw1.png';
+
+
 // this is styling that will override reactstrap styling
 const saveBtnStyle = {
     color: 'black',
-    backgroundColor: 'rgb(255,202,135)'
+    backgroundColor: 'rgb(106,138,245)'
 }
-
 
 class ThrowParty extends Component {
 
@@ -69,9 +70,6 @@ class ThrowParty extends Component {
         return (
             <React.Fragment>
                 <div>
-                    {/* <Button
-                            onClick={this.handleGoBack}
-                        >Go Back</Button> */}
                     <img
                         className="home"
                         src={home}
@@ -81,7 +79,7 @@ class ThrowParty extends Component {
                 </div>
                 <form className="throwForm">
                     <div>
-                        <img 
+                        <img
                             src={throwImg}
                             alt="throwImg"
                             className="throwPic"
@@ -90,7 +88,7 @@ class ThrowParty extends Component {
 
                     <div>
                         <input
-                            className="nameInput inputs"
+                            className="nameInput  override inputs"
                             id="name"
                             name="name"
                             placeholder=" Party Name"
@@ -103,7 +101,7 @@ class ThrowParty extends Component {
                             id="streetAddress"
                             name="streetAddress"
                             required
-                            className="addyInput inputs"
+                            className="addyInput override inputs"
                             placeholder="Street Address"
                             onChange={this.handleFieldChange}
                         />
@@ -114,51 +112,54 @@ class ThrowParty extends Component {
                             type="number"
                             maxLength="5"
                             name="zipcode"
-                            className="zipInput inputs"
+                            className="zipInput override inputs"
                             required
                             placeholder="Zipcode"
                             onChange={this.handleFieldChange}
                         />
                     </div>
-                    <div className="labeledInputs">
-                        <div>
-                            <label
+                    <div className=" timedLabel labeled1">
+                        {/* <label
                             className="dateLabel"
-                            >Date</label><br />
-                            <input
-                                id="date"
-                                type="date"
-                                onChange={this.handleFieldChange}
-                            />
-                        </div>
-                        <div>
-                            <label>Time</label><br />
-                            <input
-                                id="time"
-                                type="time"
-                                onChange={this.handleFieldChange}
-                            />
-                        </div>
-                        <div>
-                            <label>Age Range</label>
-                            <br />
-                            <select
-                                name="ageRange"
-                                id="ageRange"
-                                onChange={this.handleFieldChange}
-                                open={this.state.open} onClose={this.handleClose}
-                            >
-                                {
-                                    this.props.ageValues.map(age => (
-                                        <option key={age.id} id={age.value} value={age.value}>{age.value}</option>
-                                    ))
-                                }
-                            </select>
-                        </div>
+                            >Date</label><br /> */}
+                        <input
+                            id="date"
+                            type="text"
+                            placeholder="Date"
+                            className="override"
+                            onChange={this.handleFieldChange}
+                        />
+                    </div>
+                    <div className="labeled2">
+                        {/* <label>Time</label><br /> */}
+                        <input
+                            placeholder="Time"
+                            id="time"
+                            type="text"
+                            className="override"
+                            onChange={this.handleFieldChange}
+                        />
+                    </div>
+                    <div>
+                        <label className="ageLabel">Age Range</label>
+                        <br />
+                        <select
+                            className="ageSelect"
+                            name="ageRange"
+                            id="ageRange"
+                            onChange={this.handleFieldChange}
+                            open={this.state.open} onClose={this.handleClose}
+                        >
+                            {
+                                this.props.ageValues.map(age => (
+                                    <option key={age.id} id={age.value} value={age.value}>{age.value}</option>
+                                ))
+                            }
+                        </select>
                     </div>
                     <div className="saveBtn">
                         <Button
-                            style={saveBtnStyle }
+                            style={saveBtnStyle}
                             type="submit"
                             onClick={this.constructNewParty}
                         >

@@ -87,8 +87,8 @@
       "zipcode": 37077,
       "isPublic": false,
       "ageRange": "25 to 30",
-      "date": "04-28-2919",
-      "time": "9pm"
+      "date": "Jan 23rd",
+      "time": "8pm"
     },
     {
       "id": 2,
@@ -97,7 +97,7 @@
       "name": "Let's Drink Up",
       "streetAddress": "1808 Button Blvd",
       "zipcode": 37076,
-      "date": "04-29-2919",
+      "date": "May 4th",
       "time": "10pm",
       "ageRange": "over 21"
     },
@@ -108,7 +108,7 @@
       "name": "Divorce Time",
       "streetAddress": "1245 Penn Lane",
       "zipcode": 37076,
-      "date": "04-28-2919",
+      "date": "April 28th",
       "time": "10pm",
       "ageRange": "over 21"
     },
@@ -118,21 +118,21 @@
       "name": "Test bitch",
       "streetAddress": "1620 Crystal Spring Ln",
       "zipcode": 37076,
-      "date": "2019-04-30",
+      "date": "April 30th",
       "time": "00:00",
       "ageRange": "over 21",
       "id": 4
     },
     {
-      "userId": 1,
+      "userId": "1",
       "id": 7,
       "name": "please",
       "streetAddress": "check this shit out ",
       "zipcode": 37076,
       "isPublic": false,
       "ageRange": "over 21",
-      "date": "2016-12-30",
-      "time": "23:59"
+      "date": "August 20th",
+      "time": "9pm"
     },
     {
       "userId": 1,
@@ -142,8 +142,8 @@
       "zipcode": 11111,
       "isPublic": false,
       "ageRange": "25 to 30",
-      "date": "2109-03-23",
-      "time": "12:23"
+      "date": "April 29th",
+      "time": "12pm"
     },
     {
       "userId": 7,
@@ -232,6 +232,17 @@
       "time": "14:02",
       "ageRange": "21 to 25",
       "id": 18
+    },
+    {
+      "userId": "1",
+      "id": 20,
+      "name": "Testing this after style!!!!",
+      "streetAddress": "987 Lame Guy Dr",
+      "zipcode": 12345,
+      "isPublic": false,
+      "ageRange": "over 21",
+      "date": "May 23rd",
+      "time": "9pm "
     }
   ],
   "attendee": [

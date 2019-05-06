@@ -1,0 +1,39 @@
+.logo1{
+    height: 225px;
+    width: 295px;
+    margin-left: 13%;
+}
+
+.searchForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 27%;
+}
+
+.zipcodeInput{
+    margin-bottom: 5%
+}
+
+.searchLabel{
+    margin-left: 4%;
+}
+
+.searchSelect{
+    margin-left: 13%;
+    margin-bottom: 5%;
+}
+
+.searchBtn{
+    margin-left: 16%;
+    /* margin-bottom: %; */
+}
+
+.dots{
+    margin-left: 14%;
+    margin-top: -4%;
+}
+select{
+    color: black;
+    background-color: blue;
+}

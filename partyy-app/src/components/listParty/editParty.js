@@ -2,6 +2,16 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import PartyManager from '../modules/partyManager'
 import { Button } from 'reactstrap'
+import back from './back.png'
+import edit from './edit.png'
+import './edit.css'
+
+// this function will override reactstrap's styling
+const saveBtnStyle = {
+    color: 'black',
+    backgroundColor: 'rgb(199,254,103)'
+}
+
 
 class EditParty extends Component {
 
@@ -34,7 +44,7 @@ class EditParty extends Component {
     // this function will create the edited party
     constructEditedParty = event => {
         event.preventDefault() // keeps from having the page go elsewhere 
-
+        console.log(typeof (this.state.partyDate))
         if (this.state.partyZipCode === "") {
             window.alert("Please enter a zip code!")
         } else {
@@ -76,72 +86,103 @@ class EditParty extends Component {
     render() {
         return (
             <React.Fragment>
+                <div>
+                    <img
+                        src={back}
+                        alt="back"
+                        className="back"
+                        onClick={this.handleGoBack}
+                    />
+                </div>
                 <form>
                     <div>
-                        <Button
-                            onClick={this.handleGoBack}
-                        >Go Back</Button>
+                        <img
+                            src={edit}
+                            alt="editlogo"
+                            className="editLogo"
+                        />
                     </div>
-                    <section>
-                        <input
-                            id="partyName"
-                            name="partyName"
-                            placeholder=" Party Name"
-                            autoFocus
-                            required
-                            value={this.state.partyName}
-                            onChange={(event) => this.setState({ partyName: event.target.value })} />
-                        <input
-                            id="partyStreetAddress"
-                            name="partyStreetAddress"
-                            required
-                            placeholder="Street Address"
-                            value={this.state.partyStreetAddress}
-                            onChange={(event) => this.setState({ partyStreetAddress: event.target.value })}
-                        />
-                        <input
-                            id="partyZipCode"
-                            type="number"
-                            maxLength="5"
-                            name="partyZipCode"
-                            required
-                            placeholder="Zipcode"
-                            value={this.state.partyZipCode}
-                            onChange={(event) => this.setState({ partyZipCode: event.target.value })}
-                        />
-                        <input
-                            id="partyDate"
-                            type="date"
-                            value={this.state.date}
-                            onChange={this.handleFieldChange}
-                        />
-                        <input
-                            value={this.state.time}
-                            id="partyTime"
-                            type="time"
-                            onChange={this.handleFieldChange}
-                        />
-                        <label>Age Range</label>
-                        <select
-                            name="partyAgeRange"
-                            id="partyAgeRange"
-                            value={this.state.partyAgeRange}
-                            onChange={(event) => { this.setState({ partyAgeRange: event.target.value }) }}
-                            open={this.state.open} onClose={this.handleClose}
-                        >
-                            {
-                                this.props.ageValues.map(age => (
-                                    <option key={age.id} id={age.value} value={age.value}>{age.value}</option>
-                                ))
-                            }
-                        </select>
+                    <section className="editForm">
+                        <div>
+                            <input
+                                className="inputs"
+                                id="partyName"
+                                name="partyName"
+                                placeholder=" Party Name"
+                                autoFocus
+                                required
+                                value={this.state.partyName}
+                                onChange={(event) => this.setState({ partyName: event.target.value })} />
+                        </div>
+                        <div>
+                            <input
+                                className="inputs"
+                                id="partyStreetAddress"
+                                name="partyStreetAddress"
+                                required
+                                placeholder="Street Address"
+                                value={this.state.partyStreetAddress}
+                                onChange={(event) => this.setState({ partyStreetAddress: event.target.value })}
+                            />
+                        </div>
+                        <div>
+                            <input
+                                className="inputs"
+                                id="partyZipCode"
+                                type="number"
+                                maxLength="5"
+                                name="partyZipCode"
+                                required
+                                placeholder="Zipcode"
+                                value={this.state.partyZipCode}
+                                onChange={(event) => this.setState({ partyZipCode: event.target.value })}
+                            />
+                        </div>
+                        <div>
+                            <input
+                                className="inputs"
+                                id="partyDate"
+                                placeholder="Date"
+                                type="text"
+                                value={this.state.partyDate}
+                                onChange={(event) => this.setState({ partyDate: event.target.value })}
+                            />
+                        </div>
+                        <div>
+                            <input
+                                className="inputs"
+                                value={this.state.partyTime}
+                                id="partyTime"
+                                placeholder="Time"
+                                type="text"
+                                onChange={(event) => this.setState({ partyTime: event.target.value })}
+                            />
+                        </div>
+                        <div className="selection">
+                            <label className="ageLabeled">Age Range</label><br />
+                            <select
+                                className="ageSelection"
+                                name="partyAgeRange"
+                                id="partyAgeRange"
+                                value={this.state.partyAgeRange}
+                                onChange={(event) => { this.setState({ partyAgeRange: event.target.value }) }}
+                                open={this.state.open} onClose={this.handleClose}
+                            >
+                                {
+                                    this.props.ageValues.map(age => (
+                                        <option key={age.id} id={age.value} value={age.value}>{age.value}</option>
+                                    ))
+                                }
+                            </select>
+                        </div>
                     </section>
-                    <div>
+                    <div className="editSaveBtn">
                         <Button
+                            style={saveBtnStyle}
                             type="submit"
                             onClick={this.constructEditedParty}
                         >
-                        Save
+                            Save
                         </Button>
                     </div>
                 </form>

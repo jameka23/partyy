@@ -2,8 +2,15 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { Button } from 'reactstrap'
 import './register.css'
-import reg from './register.png'
+import reg from './register1.png'
 import back from './back.png'
+
+// this is to override reactstrap's style
+const regBtnStyle ={
+    color: 'black',
+    backgroundColor: 'rgb(232, 112, 97)'
+}
+
 
 class Register extends Component{
     state = {
@@ -68,6 +75,7 @@ class Register extends Component{
                 <form className="regForm">
                     <div>
                         <input 
+                            className="regInputs"
                             required
                             placeholder="name"
                             id="name"
@@ -78,6 +86,7 @@ class Register extends Component{
                     </div>
                     <div>
                         <input 
+                        className="regInputs"
                             required
                             placeholder="username"
                             id="username"
@@ -88,6 +97,7 @@ class Register extends Component{
                     </div>
                     <div>
                         <input 
+                        className="regInputs"
                             type="password"
                             required
                             placeholder="password"
@@ -99,6 +109,7 @@ class Register extends Component{
                     </div>
                     <div>
                         <input 
+                        className="regInputs"
                             type="email"
                             required
                             placeholder="email"
@@ -110,6 +121,7 @@ class Register extends Component{
                     </div>
                     <div className="signBtn">
                         <Button
+                        style={regBtnStyle}
                             onClick={this.handleSignUp}
                         >Sign Up</Button>
                     </div>
