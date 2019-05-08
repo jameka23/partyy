@@ -76,6 +76,13 @@
       "password": "jon",
       "email": "jon@gmail.com",
       "id": 11
+    },
+    {
+      "name": "Jon",
+      "username": "Jon1",
+      "password": "jon",
+      "email": "jon1@gmail.com",
+      "id": 12
     }
   ],
   "party": [
@@ -214,7 +221,7 @@
     {
       "userId": "11",
       "id": 16,
-      "name": "Jameka is mean",
+      "name": "Jameka is rude and mean",
       "streetAddress": "123 Jameka ln",
       "zipcode": 37075,
       "isPublic": false,
@@ -245,7 +252,7 @@
       "time": "9pm "
     }
   ],
-  "attendee": [
+  "attendees": [
     {
       "id": 1,
       "userId": 4,

@@ -4,9 +4,12 @@ import {
     Button, Card, CardText, CardBody,
     CardTitle
 } from 'reactstrap'
+import deleteicon from './delete.png'
 import './listParty.css'
 import home from './home.png'
 import host from './host1.png'
+import edit from './pencil.png'
+
 
 // this function will do an override on reactstrap's css
 const cardStyle = {
@@ -48,6 +51,7 @@ class ListParty extends Component {
                 <div className="party--container">
                     {
                         this.props.parties.filter(party => party.user.id === Number(sessionStorage.getItem("userId")))
+                            .reverse()
                             .map(party => (
                                 <Card key={party.id} style={cardStyle} className="user--parties text--center" body>
                                     <CardBody>
@@ -61,13 +65,21 @@ class ListParty extends Component {
                                         </div>
 
                                         <div className="listPartyBtns">
-                                            <Button
+                                            {/* <Button
                                                 style={btnStyle}
                                                 className="editBtn"
                                                 size="small"
                                                 onClick={() => { this.props.history.push(`/${party.id}/edit`) }}
-                                            >Edit</Button>
-                                            <Button
+                                            >Edit</Button> */}
+                                            <img 
+                                                src={edit}
+                                                alt="edit"
+                                                className="editBtn"
+                                                size="small"
+                                                onClick={() => { this.props.history.push(`/${party.id}/edit`) }}
+                                            />
+                                            {/* <label>Edit</label> */}
+                                            {/* <Button
                                                 style={btnStyle}
                                                 className="deleteBtn"
                                                 size="small"
@@ -77,7 +89,19 @@ class ListParty extends Component {
                                                         this.props.deleteParty(party.id)
                                                     }
                                                 }}
-                                            >Delete</Button>
+                                            >Delete</Button> */}
+                                            <img 
+                                                src={deleteicon}
+                                                alt="deleteicon"
+                                                className="deleteBtn"
+                                                size="small"
+                                                onClick={() => {
+                                                    const deleteConfrim = window.confirm(`Are you sure you want to delete ${party.name} party and be a party pooper?`)
+                                                    if (deleteConfrim) {
+                                                        this.props.deleteParty(party.id)
+                                                    }
+                                                }}
+                                            />
                                         </div>
                                     </CardBody>
                                 </Card>

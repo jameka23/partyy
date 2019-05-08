@@ -3,6 +3,7 @@ import React, { Component } from "react"
 import { withRouter } from 'react-router'
 import partyManager from './modules/partyManager'
 import userManager from './modules/userManager'
+import attendManager from './modules/attendManager'
 import Homepage from './homepage/homepage'
 import ThrowParty from '../components/throwParty/throwParty'
 import ListParty from '../components/listParty/listParties'
@@ -10,6 +11,8 @@ import EditParty from '../components/listParty/editParty'
 import SearchParty from '../components/searchParty/searchParty'
 import Login from '../components/authentication/login'
 import Register from '../components/authentication/register'
+import Attend from '../components/attend/attend'
+import Location from '../components/location/location'
 
 class ApplicationView extends Component {
 
@@ -20,6 +23,7 @@ class ApplicationView extends Component {
     state = {
         parties: [],
         users: [],
+        attend: [],
         activeUser: sessionStorage.getItem("userId")
     }
 
@@ -32,6 +36,8 @@ class ApplicationView extends Component {
             .then(parties => this.setState({ parties: parties }))
             .then(() => userManager.all())
             .then(users => this.setState({ users: users }))
+            .then(() => attendManager.all())
+            .then(attending => this.setState({attend: attending}))
             .then(() => this.setState(newState))
     }
 
@@ -99,6 +105,14 @@ class ApplicationView extends Component {
                 })
             })
             .then(() => this.props.history.push('/login'))
+    }
+
+    // this function will add a user attendance to their attending parties
+    attendParty = attendingObject => {
+        attendManager.post(attendingObject)
+            .then(() => attendManager.all())
+            .then(attending => this.setState({attend: attending}))
+            .then(() => this.props.history.push('/attend'))
     }
 
     ageValues = [
@@ -186,6 +200,25 @@ class ApplicationView extends Component {
                         return <Redirect to="/login" />
                     }
                 }} />
+                <Route exact path="/location" render={(props) =>{
+                    if(this.isAuthenticated()){
+                        return <Location
+                            {...props}
+                            attendParty={this.attendParty}/>
+                    }else{
+                        return <Redirect to="/login" />
+                    }
+                }} />
+                <Route exact path="/attend" render={(props) => {
+                    if(this.isAuthenticated()){
+                        return <Attend 
+                            {...props}
+                            attend={this.attend}
+                        />
+                    }else{
+                        return <Redirect to='/login' />
+                    }
+                }}/>
             </React.Fragment>
         )
     }

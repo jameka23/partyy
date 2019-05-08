@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Card, CardTitle, CardText } from 'reactstrap'
 import './searchResults.css'
+import locate from './location.png'
 
 //override reactstrap css 
 const cardStyle = {
@@ -29,6 +30,13 @@ export default class SearchPartyResults extends Component {
                                         <CardText>Date: {party.date}</CardText>
                                         <CardText>Time: {party.time}</CardText>
                                         <CardText>Age Range: {party.ageRange}</CardText>
+                                    </div>
+                                    <div>
+                                        <img 
+                                            src={locate}
+                                            alt="locate"
+                                            className="locate"
+                                        />
                                     </div>
                                 </Card>
                             ))

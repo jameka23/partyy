@@ -99,6 +99,7 @@ export default class SearchParty extends Component {
                             value={this.state.searchAgeRange}
                             open={this.state.open}
                         >
+                        <option value="">Age Range</option>
                             {
                                 this.props.ageValues.map(age => (
                                     <option
