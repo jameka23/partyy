@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
-import {Card} from 'reactstrap'
+import {Card, CardText, CardTitle} from 'reactstrap'
 import logo from './logo1.png'
 import './attend.css'
 import home from './home.png'
+import address from './address.png'
+
+const cardStyle = {
+    backgroundColor: 'rgb(224,149,60)'
+} 
 
 class Attend extends Component{
 
@@ -11,6 +16,11 @@ class Attend extends Component{
         this.props.history.push('/')
     }
 
+    state = {
+        // userLocation: {lat: 32, lng: 32}
+        userLatitude: 32,
+        userLongitude: 32
+    }
     render(){
         console.log(this.props.attend)
         let user = Number(sessionStorage.getItem('userId'))
@@ -34,10 +44,21 @@ class Attend extends Component{
                 {
                     this.props.attend.filter(attending => attending.userId === user)
                     .map(attending => (
-                        <Card key={attending.id}className="attendingCards">
+                        <Card key={attending.id}
+                        style={cardStyle}
+                        className="attendingCards">
                             <div key={attending.id}>
-                                <p>{attending.party.name}</p>
-                                <p>{attending.party.address}</p>
+                                <CardTitle>{attending.party.name}</CardTitle>
+                                <CardText>{attending.party.address}</CardText>
+                                <CardText>{attending.party.date}</CardText>
+                                <CardText>{attending.party.time}</CardText>
+                            </div>
+                            <div>
+                                <img 
+                                    src={address}
+                                    alt="address"
+                                    className="address"
+                                />
                             </div>
                         </Card>
                     ))
