@@ -52,9 +52,8 @@ class EditParty extends Component {
                 userId: Number(sessionStorage.getItem("userId")),
                 id: parseInt(this.props.match.params.partyId),
                 name: this.state.partyName,
-                streetAddress: this.state.partyStreetAddress,
+                address: this.state.partyStreetAddress,
                 zipcode: Number(this.state.partyZipCode),
-                isPublic: false,
                 ageRange: this.state.partyAgeRange,
                 date: this.state.partyDate,
                 time: this.state.partyTime
@@ -69,7 +68,7 @@ class EditParty extends Component {
                 // console.log(party)
                 this.setState({
                     partyName: party.name,
-                    partyStreetAddress: party.streetAddress,
+                    partyStreetAddress: party.address,
                     partyZipCode: Number(party.zipcode),
                     partyDate: party.date,
                     partyTime: party.time,
@@ -80,7 +79,7 @@ class EditParty extends Component {
     }
 
     handleGoBack = () => {
-        this.props.history.push('/')
+        this.props.history.push('/listParties')
     }
 
     render() {

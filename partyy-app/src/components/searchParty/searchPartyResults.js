@@ -25,7 +25,7 @@ export default class SearchPartyResults extends Component {
                                 <Card className="searchCard" style={cardStyle}>
                                         <CardTitle className="title">{party.name}</CardTitle>
                                     <div key={party.id}>
-                                        <CardText>Address: {party.streetAddress}</CardText>
+                                        <CardText>Address: {party.address}</CardText>
                                         <CardText>Zipcode: {party.zipcode}</CardText>
                                         <CardText>Date: {party.date}</CardText>
                                         <CardText>Time: {party.time}</CardText>

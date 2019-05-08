@@ -24,7 +24,7 @@ class ApplicationView extends Component {
         parties: [],
         users: [],
         attend: [],
-        activeUser: sessionStorage.getItem("userId")
+        activeUser: Number(sessionStorage.getItem("userId"))
     }
 
     componentDidMount() {

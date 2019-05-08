@@ -28,6 +28,7 @@ class ListParty extends Component {
     }
 
     render() {
+        console.log(this.props.parties)
         return (
             <React.Fragment>
                 <div>
@@ -50,14 +51,14 @@ class ListParty extends Component {
                 </div>
                 <div className="party--container">
                     {
-                        this.props.parties.filter(party => party.user.id === Number(sessionStorage.getItem("userId")))
+                        this.props.parties.filter(party => Number(party.userId) === Number(sessionStorage.getItem("userId")))
                             .reverse()
                             .map(party => (
                                 <Card key={party.id} style={cardStyle} className="user--parties text--center" body>
                                     <CardBody>
                                         <h1 className="header"><CardTitle>{party.name}</CardTitle></h1>
                                         <div className="innerCardText">
-                                            <CardText>Address: {party.streetAddress}</CardText>
+                                            <CardText>Address: {party.address}</CardText>
                                             <CardText>zip code: {party.zipcode}</CardText>
                                             <CardText>Date: {party.date}</CardText>
                                             <CardText>Time: {party.time}</CardText>

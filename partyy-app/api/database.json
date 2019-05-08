@@ -55,27 +55,6 @@
       "password": "kalen",
       "email": "kalen@gmail.com",
       "id": 8
-    },
-    {
-      "name": "jenny",
-      "username": "jennye",
-      "password": "jenny",
-      "email": "jenny@gmail.com",
-      "id": 9
-    },
-    {
-      "name": "chaffin",
-      "username": "chaffins",
-      "password": "chaffin",
-      "email": "chaffin@gmail.com",
-      "id": 10
-    },
-    {
-      "name": "jonathan",
-      "username": "jon",
-      "password": "jon",
-      "email": "jon@gmail.com",
-      "id": 11
     }
   ],
   "parties": [
@@ -83,9 +62,8 @@
       "userId": 1,
       "id": 1,
       "name": "Fun Times at Ridgedale!!!!!",
-      "address": "122 Northland Drive",
-      "zipcode": 37077,
-      "isPublic": false,
+      "address": "122 Northland Drive, Belleville, IL",
+      "zipcode": 62221,
       "ageRange": "25 to 30",
       "date": "Jan 23rd",
       "time": "8pm"
@@ -93,7 +71,6 @@
     {
       "id": 2,
       "userId": 2,
-      "isPublic": false,
       "name": "Let's Drink Up",
       "address": "1808 Button Blvd",
       "zipcode": 37076,
@@ -104,9 +81,8 @@
     {
       "id": 3,
       "userId": 2,
-      "isPublic": false,
       "name": "Divorce Time",
-      "address": "1245 Penn Lane",
+      "address": "4751 Lebanon Pike, Nashville, TN",
       "zipcode": 37076,
       "date": "April 28th",
       "time": "10pm",
@@ -114,9 +90,8 @@
     },
     {
       "userId": 3,
-      "isPublic": false,
       "name": "Test bitch",
-      "address": "1620 Crystal Spring Ln",
+      "address": "1620 Crystal Spring Ln, Nashville, TN",
       "zipcode": 37076,
       "date": "April 30th",
       "time": "00:00",
@@ -129,7 +104,6 @@
       "name": "please",
       "address": "check this shit out ",
       "zipcode": 37076,
-      "isPublic": false,
       "ageRange": "over 21",
       "date": "August 20th",
       "time": "9pm"
@@ -140,7 +114,6 @@
       "name": "checking for edit!",
       "address": "hope it works",
       "zipcode": 11111,
-      "isPublic": false,
       "ageRange": "25 to 30",
       "date": "April 29th",
       "time": "12pm"
@@ -151,14 +124,12 @@
       "name": "mvp!",
       "address": "mvp!",
       "zipcode": 12345,
-      "isPublic": false,
       "ageRange": "21 to 25",
       "date": "2018-11-30",
       "time": "12:59"
     },
     {
       "userId": 7,
-      "isPublic": false,
       "name": "heyyyyyy",
       "address": "123 holla ave",
       "zipcode": 12345,
@@ -169,9 +140,8 @@
     },
     {
       "userId": 7,
-      "isPublic": false,
       "name": "Graduation",
-      "address": "1555 Erica Renee Court",
+      "address": "1555 Erica Renee Court, Belleville, IL",
       "zipcode": 62221,
       "date": "2019-05-03",
       "time": "12:00",
@@ -184,16 +154,14 @@
       "name": "Retirement!",
       "address": "6 Loisel Dr",
       "zipcode": 37087,
-      "isPublic": false,
       "ageRange": "25 to 30",
       "date": "2019-12-31",
       "time": "12:59"
     },
     {
       "userId": 3,
-      "isPublic": false,
       "name": "divorce",
-      "address": "122 Northland Dr",
+      "address": "4751 Lebanon Pike, Hermitage, TN",
       "zipcode": 62221,
       "date": "2020-04-01",
       "time": "13:00",
@@ -202,7 +170,6 @@
     },
     {
       "userId": 1,
-      "isPublic": false,
       "name": "session",
       "address": "123 storage",
       "zipcode": 12345,
@@ -217,14 +184,12 @@
       "name": "Jameka is rude and mean",
       "address": "123 Jameka ln, ",
       "zipcode": 37075,
-      "isPublic": false,
       "ageRange": "21 to 25",
       "date": "2019-05-13",
       "time": "12:22"
     },
     {
       "userId": 1,
-      "isPublic": false,
       "name": "jffjal;f",
       "address": "jadsljfa",
       "zipcode": 12345,
@@ -238,8 +203,7 @@
       "id": 20,
       "name": "Testing this after style!!!!",
       "address": "1620 Crystal Spring Lane, Nashville, TN",
-      "zipcode": 12345,
-      "isPublic": false,
+      "zipcode": 37076,
       "ageRange": "over 21",
       "date": "May 23rd",
       "time": "9pm "

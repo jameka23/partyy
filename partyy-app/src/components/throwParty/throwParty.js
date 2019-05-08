@@ -16,9 +16,8 @@ class ThrowParty extends Component {
 
     state = {
         userId: sessionStorage.getItem("userId"),
-        isPublic: false,
         name: '',
-        streetAddress: '',
+        address: '',
         zipcode: '',
         date: '',
         time: '',
@@ -47,16 +46,15 @@ class ThrowParty extends Component {
             window.alert("Please enter a zip code!")
         } else {
             const newParty = {
-                userId: sessionStorage.getItem("userId"),
-                isPublic: false,
+                userId: Number(sessionStorage.getItem("userId")),
                 name: this.state.name,
-                streetAddress: this.state.streetAddress,
+                address: this.state.address,
                 zipcode: Number(this.state.zipcode),
                 date: this.state.date,
                 time: this.state.time,
                 ageRange: this.state.ageRange
             }
-            console.log(newParty)
+            // console.log(newParty)
             this.props.createParty(newParty)
         }
 
@@ -98,8 +96,8 @@ class ThrowParty extends Component {
                     </div>
                     <div>
                         <input
-                            id="streetAddress"
-                            name="streetAddress"
+                            id="address"
+                            name="address"
                             required
                             className="addyInput override inputs"
                             placeholder="Street Address"
