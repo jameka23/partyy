@@ -14,6 +14,7 @@
 .card {
     margin: 2% 10%;
     /* padding-left:5% */
+    box-shadow: 5px 5px 5px #263238;
 }
 
 .home{

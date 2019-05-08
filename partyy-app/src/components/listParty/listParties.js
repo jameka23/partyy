@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import {
-    Button, Card, CardText, CardBody,
+    Card, CardText, CardBody,
     CardTitle
 } from 'reactstrap'
 import deleteicon from './delete.png'
@@ -16,10 +16,10 @@ const cardStyle = {
     backgroundColor: '#9162e4'
 }
 
-const btnStyle = {
-    color: 'black',
-    backgroundColor: 'rgb(252,216,85)'
-}
+// const btnStyle = {
+//     color: 'black',
+//     backgroundColor: 'rgb(252,216,85)'
+// }
 
 class ListParty extends Component {
 
@@ -63,6 +63,7 @@ class ListParty extends Component {
                                             <CardText>Date: {party.date}</CardText>
                                             <CardText>Time: {party.time}</CardText>
                                             <CardText>Age Range: {party.ageRange}</CardText>
+                                            {/* <CardText>Latitude: {party.lat}</CardText> */}
                                         </div>
 
                                         <div className="listPartyBtns">

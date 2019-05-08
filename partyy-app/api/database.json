@@ -66,7 +66,9 @@
       "zipcode": 62221,
       "ageRange": "25 to 30",
       "date": "Jan 23rd",
-      "time": "8pm"
+      "time": "8pm",
+      "lat": "",
+      "long": ""
     },
     {
       "id": 2,
@@ -76,7 +78,9 @@
       "zipcode": 37076,
       "date": "May 4th",
       "time": "10pm",
-      "ageRange": "over 21"
+      "ageRange": "over 21",
+      "lat": "",
+      "long": ""
     },
     {
       "id": 3,
@@ -86,7 +90,9 @@
       "zipcode": 37076,
       "date": "April 28th",
       "time": "10pm",
-      "ageRange": "over 21"
+      "ageRange": "over 21",
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 3,
@@ -96,7 +102,9 @@
       "date": "April 30th",
       "time": "00:00",
       "ageRange": "over 21",
-      "id": 4
+      "id": 4,
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 1,
@@ -106,7 +114,9 @@
       "zipcode": 37076,
       "ageRange": "over 21",
       "date": "August 20th",
-      "time": "9pm"
+      "time": "9pm",
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 1,
@@ -116,7 +126,9 @@
       "zipcode": 11111,
       "ageRange": "25 to 30",
       "date": "April 29th",
-      "time": "12pm"
+      "time": "12pm",
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 7,
@@ -126,7 +138,9 @@
       "zipcode": 12345,
       "ageRange": "21 to 25",
       "date": "2018-11-30",
-      "time": "12:59"
+      "time": "12:59",
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 7,
@@ -136,7 +150,9 @@
       "date": "2018-11-30",
       "time": "23:58",
       "ageRange": "under 21",
-      "id": 11
+      "id": 11,
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 7,
@@ -146,7 +162,9 @@
       "date": "2019-05-03",
       "time": "12:00",
       "ageRange": "under 21",
-      "id": 12
+      "id": 12,
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 9,
@@ -156,7 +174,9 @@
       "zipcode": 37087,
       "ageRange": "25 to 30",
       "date": "2019-12-31",
-      "time": "12:59"
+      "time": "12:59",
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 3,
@@ -166,7 +186,9 @@
       "date": "2020-04-01",
       "time": "13:00",
       "ageRange": "25 to 30",
-      "id": 14
+      "id": 14,
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 1,
@@ -176,7 +198,9 @@
       "date": "2019-12-31",
       "time": "12:59",
       "ageRange": "under 21",
-      "id": 15
+      "id": 15,
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 11,
@@ -186,7 +210,9 @@
       "zipcode": 37075,
       "ageRange": "21 to 25",
       "date": "2019-05-13",
-      "time": "12:22"
+      "time": "12:22",
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 1,
@@ -196,7 +222,9 @@
       "date": "2020-05-03",
       "time": "14:02",
       "ageRange": "21 to 25",
-      "id": 18
+      "id": 18,
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 1,
@@ -206,7 +234,41 @@
       "zipcode": 37076,
       "ageRange": "over 21",
       "date": "May 23rd",
-      "time": "9pm "
+      "time": "9pm ",
+      "lat": "",
+      "long": ""
+    },
+    {
+      "userId": 1,
+      "name": "Geolocation",
+      "address": "1620 Crystal Spring Lane",
+      "zipcode": 37076,
+      "date": "Dec 23rd",
+      "time": "10pm",
+      "ageRange": "over 21",
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "name": "test location",
+      "address": "1620 Crystal Spring Ln",
+      "zipcode": 37076,
+      "date": "May 21st",
+      "time": "11pm",
+      "ageRange": "21 to 25",
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "name": "Test Locationsssss",
+      "address": "4751 Lebanon Pike, Nashville, TN",
+      "zipcode": 37076,
+      "date": "March 3",
+      "time": "5pm",
+      "ageRange": "over 21",
+      "lat": 36.2143095,
+      "long": -86.59186299999999,
+      "id": 23
     }
   ],
   "attendees": [

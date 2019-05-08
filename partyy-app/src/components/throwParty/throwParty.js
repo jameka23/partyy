@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
+import Geocode from "react-geocode";
 import { Button } from 'reactstrap'
 import './throwParty.css'
 import home from './home.png';
@@ -12,6 +13,8 @@ const saveBtnStyle = {
     backgroundColor: 'rgb(106,138,245)'
 }
 
+Geocode.setApiKey("AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU");
+
 class ThrowParty extends Component {
 
     state = {
@@ -22,8 +25,12 @@ class ThrowParty extends Component {
         date: '',
         time: '',
         ageRange: '',
+        lat: '',
+        long: '',
         open: false
     }
+
+    
 
     handleClose = (event) => {
         this.setState({ open: false });
@@ -45,17 +52,36 @@ class ThrowParty extends Component {
         if (this.state.zipCode === "") {
             window.alert("Please enter a zip code!")
         } else {
-            const newParty = {
-                userId: Number(sessionStorage.getItem("userId")),
-                name: this.state.name,
-                address: this.state.address,
-                zipcode: Number(this.state.zipcode),
-                date: this.state.date,
-                time: this.state.time,
-                ageRange: this.state.ageRange
-            }
-            // console.log(newParty)
-            this.props.createParty(newParty)
+
+            // make a call to google maps
+            // fetch("https://maps.googleapis.com/maps/api/js?key=AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU")
+            // .then(results, status =>{
+            //     if(status === "OK"){
+            //         console.log('ok')
+            //         console.log(results)
+            //     }
+            // })
+
+            // using the geolocation npm, I am able to convert the user's party location to lat, lng values and therefore use it for google map's api
+            Geocode.fromAddress(this.state.address).then(response => {
+                const { lat, lng } = response.results[0].geometry.location;
+                console.log(lat, lng)
+                const newParty = {
+                    userId: Number(sessionStorage.getItem("userId")),
+                    name: this.state.name,
+                    address: this.state.address,
+                    zipcode: Number(this.state.zipcode),
+                    date: this.state.date,
+                    time: this.state.time,
+                    ageRange: this.state.ageRange,
+                    lat: lat,
+                    long: lng
+                }
+                // console.log(newParty)
+                this.props.createParty(newParty)
+            })
+
+
         }
 
     }

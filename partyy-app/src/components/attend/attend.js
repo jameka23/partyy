@@ -34,7 +34,7 @@ class Attend extends Component{
                 {
                     this.props.attend.filter(attending => attending.userId === user)
                     .map(attending => (
-                        <Card className="attendingCards">
+                        <Card key={attending.id}className="attendingCards">
                             <div key={attending.id}>
                                 <p>{attending.party.name}</p>
                                 <p>{attending.party.address}</p>
