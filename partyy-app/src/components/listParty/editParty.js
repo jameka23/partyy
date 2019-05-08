@@ -49,7 +49,7 @@ class EditParty extends Component {
             window.alert("Please enter a zip code!")
         } else {
             const editedParty = {
-                userId: sessionStorage.getItem("userId"),
+                userId: Number(sessionStorage.getItem("userId")),
                 id: parseInt(this.props.match.params.partyId),
                 name: this.state.partyName,
                 streetAddress: this.state.partyStreetAddress,

@@ -28,6 +28,9 @@ class Homepage extends Component {
         this.props.history.push('/searchParty')
     }
 
+    handleAttendParty = () => {
+        this.props.history.push('/attend')
+    }
     render() {
         return (
             <React.Fragment>
@@ -83,6 +86,7 @@ class Homepage extends Component {
                                 <img src={vip}
                                     className="vipImg"
                                     alt="vip"
+                                    onClick={this.handleAttendParty}
                                 />
                                 <label className="attendLabel">Attending Parties</label>
                             </div>

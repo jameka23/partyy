@@ -76,14 +76,21 @@
       "password": "jon",
       "email": "jon@gmail.com",
       "id": 11
+    },
+    {
+      "name": "Jon",
+      "username": "Jon1",
+      "password": "jon",
+      "email": "jon1@gmail.com",
+      "id": 12
     }
   ],
-  "parties": [
+  "party": [
     {
-      "userId": 1,
+      "userId": "1",
       "id": 1,
       "name": "Fun Times at Ridgedale!!!!!",
-      "address": "122 Northland Drive",
+      "streetAddress": "122 Northland Drive",
       "zipcode": 37077,
       "isPublic": false,
       "ageRange": "25 to 30",
@@ -95,7 +102,7 @@
       "userId": 2,
       "isPublic": false,
       "name": "Let's Drink Up",
-      "address": "1808 Button Blvd",
+      "streetAddress": "1808 Button Blvd",
       "zipcode": 37076,
       "date": "May 4th",
       "time": "10pm",
@@ -106,7 +113,7 @@
       "userId": 2,
       "isPublic": false,
       "name": "Divorce Time",
-      "address": "1245 Penn Lane",
+      "streetAddress": "1245 Penn Lane",
       "zipcode": 37076,
       "date": "April 28th",
       "time": "10pm",
@@ -116,7 +123,7 @@
       "userId": 3,
       "isPublic": false,
       "name": "Test bitch",
-      "address": "1620 Crystal Spring Ln",
+      "streetAddress": "1620 Crystal Spring Ln",
       "zipcode": 37076,
       "date": "April 30th",
       "time": "00:00",
@@ -124,10 +131,10 @@
       "id": 4
     },
     {
-      "userId": 1,
+      "userId": "1",
       "id": 7,
       "name": "please",
-      "address": "check this shit out ",
+      "streetAddress": "check this shit out ",
       "zipcode": 37076,
       "isPublic": false,
       "ageRange": "over 21",
@@ -138,7 +145,7 @@
       "userId": 1,
       "id": 9,
       "name": "checking for edit!",
-      "address": "hope it works",
+      "streetAddress": "hope it works",
       "zipcode": 11111,
       "isPublic": false,
       "ageRange": "25 to 30",
@@ -149,7 +156,7 @@
       "userId": 7,
       "id": 10,
       "name": "mvp!",
-      "address": "mvp!",
+      "streetAddress": "mvp!",
       "zipcode": 12345,
       "isPublic": false,
       "ageRange": "21 to 25",
@@ -160,7 +167,7 @@
       "userId": 7,
       "isPublic": false,
       "name": "heyyyyyy",
-      "address": "123 holla ave",
+      "streetAddress": "123 holla ave",
       "zipcode": 12345,
       "date": "2018-11-30",
       "time": "23:58",
@@ -171,7 +178,7 @@
       "userId": 7,
       "isPublic": false,
       "name": "Graduation",
-      "address": "1555 Erica Renee Court",
+      "streetAddress": "1555 Erica Renee Court",
       "zipcode": 62221,
       "date": "2019-05-03",
       "time": "12:00",
@@ -182,7 +189,7 @@
       "userId": 9,
       "id": 13,
       "name": "Retirement!",
-      "address": "6 Loisel Dr",
+      "streetAddress": "6 Loisel Dr",
       "zipcode": 37087,
       "isPublic": false,
       "ageRange": "25 to 30",
@@ -193,7 +200,7 @@
       "userId": 3,
       "isPublic": false,
       "name": "divorce",
-      "address": "122 Northland Dr",
+      "streetAddress": "122 Northland Dr",
       "zipcode": 62221,
       "date": "2020-04-01",
       "time": "13:00",
@@ -204,7 +211,7 @@
       "userId": 1,
       "isPublic": false,
       "name": "session",
-      "address": "123 storage",
+      "streetAddress": "123 storage",
       "zipcode": 12345,
       "date": "2019-12-31",
       "time": "12:59",
@@ -212,10 +219,10 @@
       "id": 15
     },
     {
-      "userId": 11,
+      "userId": "11",
       "id": 16,
       "name": "Jameka is rude and mean",
-      "address": "123 Jameka ln, ",
+      "streetAddress": "123 Jameka ln",
       "zipcode": 37075,
       "isPublic": false,
       "ageRange": "21 to 25",
@@ -223,10 +230,10 @@
       "time": "12:22"
     },
     {
-      "userId": 1,
+      "userId": "1",
       "isPublic": false,
       "name": "jffjal;f",
-      "address": "jadsljfa",
+      "streetAddress": "jadsljfa",
       "zipcode": 12345,
       "date": "2020-05-03",
       "time": "14:02",
@@ -234,10 +241,10 @@
       "id": 18
     },
     {
-      "userId": 1,
+      "userId": "1",
       "id": 20,
       "name": "Testing this after style!!!!",
-      "address": "1620 Crystal Spring Lane, Nashville, TN",
+      "streetAddress": "987 Lame Guy Dr",
       "zipcode": 12345,
       "isPublic": false,
       "ageRange": "over 21",
@@ -259,7 +266,7 @@
     {
       "id": 3,
       "userId": 1,
-      "partyId": 20
+      "partyId": 1
     },
     {
       "id": 4,

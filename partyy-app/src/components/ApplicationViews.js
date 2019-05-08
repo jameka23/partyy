@@ -213,7 +213,9 @@ class ApplicationView extends Component {
                     if(this.isAuthenticated()){
                         return <Attend 
                             {...props}
-                            attend={this.attend}
+                            parties={this.state.parties}
+                            users={this.state.users}
+                            attend={this.state.attend}
                         />
                     }else{
                         return <Redirect to='/login' />
