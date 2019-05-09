@@ -71,18 +71,18 @@ class Attend extends Component {
                                 style={cardStyle}
                                 className="attendingCards">
                                 <div key={attending.id}>
-                                    <CardTitle>{attending.party.name}</CardTitle>
-                                    <CardText>{attending.party.address}</CardText>
-                                    <CardText>{attending.party.date}</CardText>
-                                    <CardText>{attending.party.time}</CardText>
+                                    <h1><CardTitle>{attending.party.name}</CardTitle></h1>
+                                    <CardText>Where: {attending.party.address}</CardText>
+                                    <CardText>When: {attending.party.date}</CardText>
+                                    <CardText>At: {attending.party.time}</CardText>
                                 </div>
-                                <div>
+                                {/* <div>
                                     <img
                                         src={address}
                                         alt="address"
                                         className="address"
                                     />
-                                </div>
+                                </div> */}
                                 <div>
                                     <Iframe
                                         src={`https://www.google.com/maps/embed/v1/directions?key=AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU&origin=${this.state.userLocation.lat},${this.state.userLocation.lng}&destination=${attending.party.lat},${attending.party.long}`}

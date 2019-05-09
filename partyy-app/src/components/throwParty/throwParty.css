@@ -26,15 +26,18 @@
 }
 
 .ageLabel{
-    margin-left: 20%;
+    margin-left: 21%;
 }
 
 .ageSelect{
+    margin-top: -5%;
     margin-left: 17%;
+    margin-bottom: 3%;
 }
 
 .timedLabel{
-    margin-top: 3%
+    margin-top: 3%;
+    /* margin-bottom: -3%; */
 }
 
 .throwPic{
@@ -50,6 +53,9 @@
     margin: 3% 3%;
 }
 
+#time{
+    margin-bottom: -3%;
+}
 .labeled1{
     margin-top: -1%;
 }

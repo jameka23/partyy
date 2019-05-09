@@ -103,6 +103,7 @@ class EditParty extends Component {
                     </div>
                     <section className="editForm">
                         <div>
+                        <label htmlFor="partyName">Name</label><br/>
                             <input
                                 className="inputs"
                                 id="partyName"
@@ -114,17 +115,19 @@ class EditParty extends Component {
                                 onChange={(event) => this.setState({ partyName: event.target.value })} />
                         </div>
                         <div>
+                        <label htmlFor="partyStreetAddress">Address</label><br/>
                             <input
                                 className="inputs"
                                 id="partyStreetAddress"
                                 name="partyStreetAddress"
                                 required
-                                placeholder="Street Address"
+                                placeholder="Address"
                                 value={this.state.partyStreetAddress}
                                 onChange={(event) => this.setState({ partyStreetAddress: event.target.value })}
                             />
                         </div>
                         <div>
+                        <label htmlFor="partyZipCode">Zipcode</label><br/>
                             <input
                                 className="inputs"
                                 id="partyZipCode"
@@ -137,7 +140,7 @@ class EditParty extends Component {
                                 onChange={(event) => this.setState({ partyZipCode: event.target.value })}
                             />
                         </div>
-                        <div>
+                        <div><label htmlFor="partyDate">Date</label><br/>
                             <input
                                 className="inputs"
                                 id="partyDate"
@@ -148,6 +151,7 @@ class EditParty extends Component {
                             />
                         </div>
                         <div>
+                            <label htmlFor="partyTime">Time</label><br/>
                             <input
                                 className="inputs"
                                 value={this.state.partyTime}
@@ -167,6 +171,7 @@ class EditParty extends Component {
                                 onChange={(event) => { this.setState({ partyAgeRange: event.target.value }) }}
                                 open={this.state.open} onClose={this.handleClose}
                             >
+                                <option value="">Age Range</option>
                                 {
                                     this.props.ageValues.map(age => (
                                         <option key={age.id} id={age.value} value={age.value}>{age.value}</option>

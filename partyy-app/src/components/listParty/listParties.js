@@ -59,7 +59,7 @@ class ListParty extends Component {
                                         <h1 className="header"><CardTitle>{party.name}</CardTitle></h1>
                                         <div className="innerCardText">
                                             <CardText>Address: {party.address}</CardText>
-                                            <CardText>zip code: {party.zipcode}</CardText>
+                                            {/* <CardText>zip code: {party.zipcode}</CardText> */}
                                             <CardText>Date: {party.date}</CardText>
                                             <CardText>Time: {party.time}</CardText>
                                             <CardText>Age Range: {party.ageRange}</CardText>

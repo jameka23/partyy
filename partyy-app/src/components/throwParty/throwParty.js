@@ -30,7 +30,7 @@ class ThrowParty extends Component {
         open: false
     }
 
-    
+
 
     handleClose = (event) => {
         this.setState({ open: false });
@@ -65,7 +65,7 @@ class ThrowParty extends Component {
             // using the geolocation npm, I am able to convert the user's party location to lat, lng values and therefore use it for google map's api
             Geocode.fromAddress(this.state.address).then(response => {
                 const { lat, lng } = response.results[0].geometry.location;
-                console.log(lat, lng)
+                // console.log(lat, lng)
                 const newParty = {
                     userId: Number(sessionStorage.getItem("userId")),
                     name: this.state.name,
@@ -126,7 +126,7 @@ class ThrowParty extends Component {
                             name="address"
                             required
                             className="addyInput override inputs"
-                            placeholder="Street Address"
+                            placeholder="Address"
                             onChange={this.handleFieldChange}
                         />
                     </div>
@@ -165,7 +165,7 @@ class ThrowParty extends Component {
                         />
                     </div>
                     <div>
-                        <label className="ageLabel">Age Range</label>
+                        {/* <label className="ageLabel">Age Range</label> */}
                         <br />
                         <select
                             className="ageSelect"
@@ -174,6 +174,7 @@ class ThrowParty extends Component {
                             onChange={this.handleFieldChange}
                             open={this.state.open} onClose={this.handleClose}
                         >
+                            <option value="">Age Range</option>
                             {
                                 this.props.ageValues.map(age => (
                                     <option key={age.id} id={age.value} value={age.value}>{age.value}</option>
