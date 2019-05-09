@@ -75,33 +75,30 @@ class Register extends Component{
                 <form className="regForm">
                     <div>
                         <input 
-                            className="regInputs"
                             required
                             placeholder="name"
                             id="name"
-                            className="inputField"
+                            className="inputField regInputs"
                             value={this.state.name}
                             onChange={this.handleFieldChange}
                         />
                     </div>
                     <div>
-                        <input 
-                        className="regInputs"
+                        <input
                             required
                             placeholder="username"
                             id="username"
-                            className="inputField"
+                            className="inputField regInputs"
                             value={this.state.username}
                             onChange={this.handleFieldChange}                        
                         />
                     </div>
                     <div>
                         <input 
-                        className="regInputs"
                             type="password"
                             required
                             placeholder="password"
-                            className="inputField"
+                            className="inputField regInputs"
                             id="password"
                             value={this.state.password}
                             onChange={this.handleFieldChange}
@@ -109,13 +106,12 @@ class Register extends Component{
                     </div>
                     <div>
                         <input 
-                        className="regInputs"
                             type="email"
                             required
                             placeholder="email"
                             id="email"
                             value={this.state.email}
-                            className="inputField"
+                            className="inputField regInputs"
                             onChange={this.handleFieldChange}                        
                         />
                     </div>

@@ -49,12 +49,11 @@ class EditParty extends Component {
             window.alert("Please enter a zip code!")
         } else {
             const editedParty = {
-                userId: sessionStorage.getItem("userId"),
+                userId: Number(sessionStorage.getItem("userId")),
                 id: parseInt(this.props.match.params.partyId),
                 name: this.state.partyName,
-                streetAddress: this.state.partyStreetAddress,
+                address: this.state.partyStreetAddress,
                 zipcode: Number(this.state.partyZipCode),
-                isPublic: false,
                 ageRange: this.state.partyAgeRange,
                 date: this.state.partyDate,
                 time: this.state.partyTime
@@ -69,7 +68,7 @@ class EditParty extends Component {
                 // console.log(party)
                 this.setState({
                     partyName: party.name,
-                    partyStreetAddress: party.streetAddress,
+                    partyStreetAddress: party.address,
                     partyZipCode: Number(party.zipcode),
                     partyDate: party.date,
                     partyTime: party.time,
@@ -80,7 +79,7 @@ class EditParty extends Component {
     }
 
     handleGoBack = () => {
-        this.props.history.push('/')
+        this.props.history.push('/listParties')
     }
 
     render() {
@@ -104,6 +103,7 @@ class EditParty extends Component {
                     </div>
                     <section className="editForm">
                         <div>
+                        <label htmlFor="partyName">Name</label><br/>
                             <input
                                 className="inputs"
                                 id="partyName"
@@ -115,17 +115,19 @@ class EditParty extends Component {
                                 onChange={(event) => this.setState({ partyName: event.target.value })} />
                         </div>
                         <div>
+                        <label htmlFor="partyStreetAddress">Address</label><br/>
                             <input
                                 className="inputs"
                                 id="partyStreetAddress"
                                 name="partyStreetAddress"
                                 required
-                                placeholder="Street Address"
+                                placeholder="Address"
                                 value={this.state.partyStreetAddress}
                                 onChange={(event) => this.setState({ partyStreetAddress: event.target.value })}
                             />
                         </div>
                         <div>
+                        <label htmlFor="partyZipCode">Zipcode</label><br/>
                             <input
                                 className="inputs"
                                 id="partyZipCode"
@@ -138,7 +140,7 @@ class EditParty extends Component {
                                 onChange={(event) => this.setState({ partyZipCode: event.target.value })}
                             />
                         </div>
-                        <div>
+                        <div><label htmlFor="partyDate">Date</label><br/>
                             <input
                                 className="inputs"
                                 id="partyDate"
@@ -149,6 +151,7 @@ class EditParty extends Component {
                             />
                         </div>
                         <div>
+                            <label htmlFor="partyTime">Time</label><br/>
                             <input
                                 className="inputs"
                                 value={this.state.partyTime}
@@ -168,6 +171,7 @@ class EditParty extends Component {
                                 onChange={(event) => { this.setState({ partyAgeRange: event.target.value }) }}
                                 open={this.state.open} onClose={this.handleClose}
                             >
+                                <option value="">Age Range</option>
                                 {
                                     this.props.ageValues.map(age => (
                                         <option key={age.id} id={age.value} value={age.value}>{age.value}</option>

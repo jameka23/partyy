@@ -14,6 +14,7 @@
 .card {
     margin: 2% 10%;
     /* padding-left:5% */
+    box-shadow: 5px 5px 5px #263238;
 }
 
 .home{
@@ -24,21 +25,18 @@
     height: 200px;
     width: 300px;
     margin-bottom: -15%;
-    margin-left: 15%;
+    margin-left: 13%;
 }
 
-.header{
-    display: flex;
-    justify-content: center;
-}
+
 
 .listPartyBtns{
-    margin-left: 20%;
+    margin-left: 8%;
     margin-top: 6%;
 }
 
 .editBtn{
-    margin-right: 5%;
+    margin-right: 16%;
 }
 
 .innerCardText{
@@ -46,7 +44,7 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin-left: 10%;
+    margin-left: 6%;
 }
 
 .labeled {
@@ -54,3 +52,7 @@
     margin-bottom: 5%;
 }
 
+img{
+    height: 70px;
+    width: 70px;
+}

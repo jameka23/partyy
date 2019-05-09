@@ -12,7 +12,8 @@
 }
 
 .zipcodeInput{
-    margin-bottom: 5%
+    margin-bottom: 5%;
+    margin-left: 2%;
 }
 
 .searchLabel{
@@ -30,10 +31,13 @@
 }
 
 .dots{
-    margin-left: 14%;
+    margin-left: 18%;
     margin-top: -4%;
 }
 select{
     color: black;
-    background-color: blue;
+    background-color: yellow;
+}
+#searchAgeRange{
+    background-color: rgb(199, 121, 223); 
 }

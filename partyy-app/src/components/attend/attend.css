@@ -1,0 +1,25 @@
+.logoAttend{
+    height: 280px;
+    width: 330px;
+    margin-left: 7%;
+    margin-top: -3%;
+    margin-bottom: -6%;
+}
+
+.attendingCards{
+    padding: 4%;
+    margin-bottom: 5%;
+    box-shadow: 10px 10px 30px #263238
+}
+
+.address{
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+.iframeBox{
+    margin-top: 4%;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px #263238;
+}
+

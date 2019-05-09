@@ -19,7 +19,9 @@
     justify-content: center;
     flex-direction: column;
 }
-
+#partyAgeRange{
+    background-color: lightgreen;
+}
 .inputs{
     outline: 0;
     border-bottom: 2px solid rgb(199, 254, 103);
@@ -50,4 +52,12 @@
 select{
     color: black;
     background-color: rgb(1, 222, 248);
+}
+
+label{
+    margin-left: 3%;
+}
+
+#partyAgeRange{
+    background-color: rgb(0, 135, 220);
 }

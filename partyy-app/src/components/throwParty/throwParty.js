@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
+import Geocode from "react-geocode";
 import { Button } from 'reactstrap'
 import './throwParty.css'
 import home from './home.png';
@@ -12,19 +13,24 @@ const saveBtnStyle = {
     backgroundColor: 'rgb(106,138,245)'
 }
 
+Geocode.setApiKey("AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU");
+
 class ThrowParty extends Component {
 
     state = {
         userId: sessionStorage.getItem("userId"),
-        isPublic: false,
         name: '',
-        streetAddress: '',
+        address: '',
         zipcode: '',
         date: '',
         time: '',
         ageRange: '',
+        lat: '',
+        long: '',
         open: false
     }
+
+
 
     handleClose = (event) => {
         this.setState({ open: false });
@@ -46,18 +52,36 @@ class ThrowParty extends Component {
         if (this.state.zipCode === "") {
             window.alert("Please enter a zip code!")
         } else {
-            const newParty = {
-                userId: sessionStorage.getItem("userId"),
-                isPublic: false,
-                name: this.state.name,
-                streetAddress: this.state.streetAddress,
-                zipcode: Number(this.state.zipcode),
-                date: this.state.date,
-                time: this.state.time,
-                ageRange: this.state.ageRange
-            }
-            console.log(newParty)
-            this.props.createParty(newParty)
+
+            // make a call to google maps
+            // fetch("https://maps.googleapis.com/maps/api/js?key=AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU")
+            // .then(results, status =>{
+            //     if(status === "OK"){
+            //         console.log('ok')
+            //         console.log(results)
+            //     }
+            // })
+
+            // using the geolocation npm, I am able to convert the user's party location to lat, lng values and therefore use it for google map's api
+            Geocode.fromAddress(this.state.address).then(response => {
+                const { lat, lng } = response.results[0].geometry.location;
+                // console.log(lat, lng)
+                const newParty = {
+                    userId: Number(sessionStorage.getItem("userId")),
+                    name: this.state.name,
+                    address: this.state.address,
+                    zipcode: Number(this.state.zipcode),
+                    date: this.state.date,
+                    time: this.state.time,
+                    ageRange: this.state.ageRange,
+                    lat: lat,
+                    long: lng
+                }
+                // console.log(newParty)
+                this.props.createParty(newParty)
+            })
+
+
         }
 
     }
@@ -98,11 +122,11 @@ class ThrowParty extends Component {
                     </div>
                     <div>
                         <input
-                            id="streetAddress"
-                            name="streetAddress"
+                            id="address"
+                            name="address"
                             required
                             className="addyInput override inputs"
-                            placeholder="Street Address"
+                            placeholder="Address"
                             onChange={this.handleFieldChange}
                         />
                     </div>
@@ -141,7 +165,7 @@ class ThrowParty extends Component {
                         />
                     </div>
                     <div>
-                        <label className="ageLabel">Age Range</label>
+                        {/* <label className="ageLabel">Age Range</label> */}
                         <br />
                         <select
                             className="ageSelect"
@@ -150,6 +174,7 @@ class ThrowParty extends Component {
                             onChange={this.handleFieldChange}
                             open={this.state.open} onClose={this.handleClose}
                         >
+                            <option value="">Age Range</option>
                             {
                                 this.props.ageValues.map(age => (
                                     <option key={age.id} id={age.value} value={age.value}>{age.value}</option>

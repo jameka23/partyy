@@ -4,7 +4,7 @@ const remoteURL = "http://localhost:5002"
 
 export default Object.create(APImanager, {
     resource: {
-        value: "party"
+        value: "parties"
     },
     all: {
         value: function () {
