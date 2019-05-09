@@ -27,20 +27,18 @@ class Attend extends Component {
         // userLongitude: 32
     }
 
-    componentDidMount() {
-        navigator.geolocation.getCurrentPosition(
-            position => {
-                const { latitude, longitude } = position.coords;
+    componentDidMount (){
+        navigator.geolocation.getCurrentPosition(function(position){
+            let coordinates = position.coords
+            let lat = coordinates.latitude
+            let long = coordinates.longitude
 
-                this.setState({
-                    userLocation: { lat: latitude, lng: longitude },
-                    loading: false
-                });
-            }
-        )
+            // console.log(lat, long)
+            this.setState({userLocation: {lat:lat, lng:long}})
+        })
     }
+    
     render() {
-        console.log(this.props.attend)
         let user = Number(sessionStorage.getItem('userId'))
         return (
             <React.Fragment>
@@ -70,12 +68,14 @@ class Attend extends Component {
                                     <CardText>{attending.party.address}</CardText>
                                     <CardText>{attending.party.date}</CardText>
                                     <CardText>{attending.party.time}</CardText>
+                                    {/* <p>{this.getCurPos}</p> */}
                                 </div>
                                 <div>
                                     <img
                                         src={address}
                                         alt="address"
                                         className="address"
+                                        onClick={this.getCurPos}
                                     />
                                 </div>
                             </Card>
@@ -87,4 +87,4 @@ class Attend extends Component {
     }
 }
 
-export default GoogleApiWrapper({apiKey:'AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU'})(Attend);
+export default GoogleApiWrapper({ apiKey: 'AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU' })(Attend);
