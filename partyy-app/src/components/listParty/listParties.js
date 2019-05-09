@@ -28,7 +28,7 @@ class ListParty extends Component {
     }
 
     render() {
-        console.log(this.props.parties)
+        // console.log(this.props.parties)
         return (
             <React.Fragment>
                 <div>

@@ -168,7 +168,7 @@ class ApplicationView extends Component {
                 }} />
                 <Route exact path="/listParties" render={(props) => {
                     if (this.isAuthenticated()) {
-                        console.log("this is the current user: ", this.state.activeUser)
+                        // console.log("this is the current user: ", this.state.activeUser)
                         return <ListParty
                             {...props}
                             parties={this.state.parties}
@@ -195,7 +195,8 @@ class ApplicationView extends Component {
                         return <SearchParty
                             {...props}
                             ageValues={this.ageValues}
-                            parties={this.state.parties} />
+                            parties={this.state.parties} 
+                            attendParty={this.attendParty}/>
                     } else {
                         return <Redirect to="/login" />
                     }
@@ -216,6 +217,7 @@ class ApplicationView extends Component {
                             parties={this.state.parties}
                             users={this.state.users}
                             attend={this.state.attend}
+                            
                         />
                     }else{
                         return <Redirect to='/login' />

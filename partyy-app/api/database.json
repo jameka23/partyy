@@ -91,8 +91,8 @@
       "date": "April 28th",
       "time": "10pm",
       "ageRange": "over 21",
-      "lat": "",
-      "long": ""
+      "lat": 36.2143095,
+      "long": -86.59186299999999
     },
     {
       "userId": 3,
@@ -235,8 +235,8 @@
       "ageRange": "over 21",
       "date": "May 23rd",
       "time": "9pm ",
-      "lat": "",
-      "long": ""
+      "lat": 36.17317,
+      "long": -86.61187
     },
     {
       "userId": 1,
@@ -269,6 +269,18 @@
       "lat": 36.2143095,
       "long": -86.59186299999999,
       "id": 23
+    },
+    {
+      "userId": 1,
+      "name": "Front End Celebration",
+      "address": " 314 11th Ave S, Nashville, TN ",
+      "zipcode": 12345,
+      "date": "May 21st",
+      "time": "9pm",
+      "ageRange": "over 21",
+      "lat": 36.1531479,
+      "long": -86.7835188,
+      "id": 24
     }
   ],
   "attendees": [
@@ -311,6 +323,11 @@
       "id": 8,
       "userId": 3,
       "partyId": 2
+    },
+    {
+      "partyId": 24,
+      "userId": 1,
+      "id": 9
     }
   ]
 }

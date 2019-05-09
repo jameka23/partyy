@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Card, CardTitle, CardText } from 'reactstrap'
 import './searchResults.css'
-import locate from './location.png'
+// import locate from './location.png'
+import add from './add.png'
 
 //override reactstrap css 
 const cardStyle = {
@@ -10,6 +11,19 @@ const cardStyle = {
 
 export default class SearchPartyResults extends Component {
 
+    state = {
+        partyId: '',
+        userId: Number(sessionStorage.getItem("userId"))
+    }
+
+    constructAddParty = (event) => {
+        console.log(sessionStorage.getItem("userId"))
+        const newAttend ={
+            partyId: Number(event.target.id),
+            userId: Number(sessionStorage.getItem("userId"))
+        }
+        this.props.attendParty(newAttend)
+    }
 
     render() {
         // console.log("The age range to be searched is: ", this.props.searchAgeRange, "The zipcode is: ", this.props.searchZipcode)
@@ -22,7 +36,9 @@ export default class SearchPartyResults extends Component {
                             .filter(party => (party.zipcode === Number(this.props.searchZipcode)))
                             .filter(party => (party.ageRange == this.props.searchAgeRange))
                             .map(party => (
-                                <Card className="searchCard" style={cardStyle}>
+                                <Card className="searchCard" style={cardStyle}
+                                key={party.id}
+                                >
                                         <CardTitle className="title">{party.name}</CardTitle>
                                     <div key={party.id}>
                                         <CardText>Address: {party.address}</CardText>
@@ -33,9 +49,11 @@ export default class SearchPartyResults extends Component {
                                     </div>
                                     <div>
                                         <img 
-                                            src={locate}
-                                            alt="locate"
-                                            className="locate"
+                                            src={add}
+                                            alt="add"
+                                            className="add"
+                                            id={party.id}
+                                            onClick={this.constructAddParty}
                                         />
                                     </div>
                                 </Card>

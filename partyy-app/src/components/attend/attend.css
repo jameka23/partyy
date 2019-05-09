@@ -16,3 +16,9 @@
     margin-left: 35%;
     margin-top: 5%;
 }
+
+.iframeBox{
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px #263238;
+}
+
