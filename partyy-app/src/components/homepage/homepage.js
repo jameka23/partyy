@@ -3,6 +3,7 @@ import { withRouter } from 'react-router'
 import './homepage.css'
 // import { Button } from 'reactstrap'
 import invite from './images/invitation.png'
+import header from './images/header.png'
 import dj from './images/dj.png'
 import vip from './images/vip.png'
 import eye from './images/eye-glasses.png'
@@ -32,6 +33,8 @@ class Homepage extends Component {
         this.props.history.push('/attend')
     }
     render() {
+        // let currUser = Number(sessionStorage.getItem("userId"))
+        // console.log(currUser, this.props.users)
         return (
             <React.Fragment>
                 {/* <Button
@@ -44,6 +47,20 @@ class Homepage extends Component {
                     className="exit"
                     onClick= {this.handleLogout}
                 />
+                <div>
+                    <img 
+                    src={header}
+                    alt="header"
+                    className="header"
+                    
+                    />
+                    {/* {
+                        this.props.users.filter(user => user.id === currUser).map(user => (
+
+                            <h1 className="header">Welcome, {user.name}!</h1>
+                        ))
+                    } */}
+                </div>
                 <div className="parent">
                     <div className="homepage--parent">
                         <div className="homepage--firstChild">

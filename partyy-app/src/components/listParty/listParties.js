@@ -56,7 +56,7 @@ class ListParty extends Component {
                             .map(party => (
                                 <Card key={party.id} style={cardStyle} className="user--parties text--center" body>
                                     <CardBody>
-                                        <h1 className="header"><CardTitle>{party.name}</CardTitle></h1>
+                                        <h3 className="headerListParties"><CardTitle>{party.name}</CardTitle></h3>
                                         <div className="innerCardText">
                                             <CardText>Address: {party.address}</CardText>
                                             {/* <CardText>zip code: {party.zipcode}</CardText> */}

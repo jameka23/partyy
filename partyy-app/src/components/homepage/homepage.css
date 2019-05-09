@@ -40,12 +40,29 @@ img{
     margin-bottom: 50px;
 }
 
+.eyeCard{
+    margin-left: 5%;
+}
+
 label{
     text-align: center;
     font-weight: bold;
 }
 
-.djImg ,.vipImg{
-    margin-left: 5%;
+.djImg {
+    margin-left: 14%;
 }
 
+.vipImg{
+    margin-left: 15%;
+    margin-right: -3%;
+}
+
+
+.header{
+    margin-left: 12%;
+    margin-top: 5%;
+    margin-bottom: -40%;
+    height: 275px;
+    width: 290px;
+}

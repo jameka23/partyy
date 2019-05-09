@@ -6,7 +6,7 @@ import Iframe from 'react-iframe'
 import logo from './logo1.png'
 import './attend.css'
 import home from './home.png'
-import address from './address.png'
+// import address from './address.png'
 
 // override boostrap
 const cardStyle = {
@@ -71,7 +71,7 @@ class Attend extends Component {
                                 style={cardStyle}
                                 className="attendingCards">
                                 <div key={attending.id}>
-                                    <h1><CardTitle>{attending.party.name}</CardTitle></h1>
+                                    <h3><CardTitle>{attending.party.name}</CardTitle></h3>
                                     <CardText>Where: {attending.party.address}</CardText>
                                     <CardText>When: {attending.party.date}</CardText>
                                     <CardText>At: {attending.party.time}</CardText>

@@ -17,7 +17,7 @@ export default class SearchPartyResults extends Component {
     }
 
     constructAddParty = (event) => {
-        console.log(sessionStorage.getItem("userId"))
+        // console.log(sessionStorage.getItem("userId"))
         const newAttend ={
             partyId: Number(event.target.id),
             userId: Number(sessionStorage.getItem("userId"))
@@ -26,7 +26,7 @@ export default class SearchPartyResults extends Component {
     }
 
     render() {
-        // console.log("The age range to be searched is: ", this.props.searchAgeRange, "The zipcode is: ", this.props.searchZipcode)
+
         return (
             <React.Fragment>
 
@@ -34,7 +34,7 @@ export default class SearchPartyResults extends Component {
                     {
                         this.props.parties
                             .filter(party => (party.zipcode === Number(this.props.searchZipcode)))
-                            .filter(party => (party.ageRange == this.props.searchAgeRange))
+                            .filter(party => (party.ageRange === this.props.searchAgeRange))
                             .map(party => (
                                 <Card className="searchCard" style={cardStyle}
                                 key={party.id}

@@ -143,7 +143,7 @@ class ApplicationView extends Component {
                 <Route exact path="/" render={(props) => {
                     // this route will go to the home page which will have all the buttons that are need to navigate
                     if (this.isAuthenticated()) {
-                        return <Homepage />
+                        return <Homepage users={this.state.users} />
                     } else {
                         return <Redirect to="/login" />
                     }
