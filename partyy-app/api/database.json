@@ -25,7 +25,7 @@
   "parties": [
     {
       "userId": 3,
-      "name": "Test Locationsssss",
+      "name": "Locationsssss After Party",
       "address": "4751 Lebanon Pike, Nashville, TN",
       "zipcode": 37076,
       "date": "March 3",
@@ -49,15 +49,35 @@
     },
     {
       "userId": 1,
+      "id": 3,
       "name": "Parthenon Music Party",
       "address": "2500 West End Ave, Nashville, TN ",
       "zipcode": 37203,
-      "date": "July 5th",
-      "time": "7pm",
       "ageRange": "over 21",
-      "lat": 36.1494148,
-      "long": -86.812823,
-      "id": 3
+      "date": "July 5th",
+      "time": "8pm"
+    },
+    {
+      "userId": 3,
+      "name": "Rose's Backyardigans ",
+      "address": "2907 Gallatin Pike, Nashville, TN ",
+      "zipcode": 37216,
+      "date": "July 1st",
+      "time": "8pm",
+      "ageRange": "over 21",
+      "lat": 36.2029207,
+      "long": -86.739131,
+      "id": 4
+    },
+    {
+      "userId": 3,
+      "id": 5,
+      "name": "Jonathon's Retirement",
+      "address": "1004 Andrews Run, Hendersonville, TN ",
+      "zipcode": 37075,
+      "ageRange": "over 21",
+      "date": "Aug 31st",
+      "time": "4pm"
     }
   ],
   "attendees": [
@@ -70,6 +90,16 @@
       "partyId": 2,
       "userId": 1,
       "id": 2
+    },
+    {
+      "partyId": 3,
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "partyId": 5,
+      "userId": 1,
+      "id": 4
     }
   ]
 }
