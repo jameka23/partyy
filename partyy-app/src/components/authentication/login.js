@@ -55,7 +55,7 @@ class Login extends Component {
 
             // if the user is not undefined, then set the sessionStorage.() and set the state
             this.setState({ activeUser: sessionStorage.setItem("userId", user.id) })
-            console.log(sessionStorage.getItem("userId"))
+            // console.log(sessionStorage.getItem("userId"))
             this.props.history.push('/')  // go to to the homepage
         } else {
             alert("You've entered the wrong username and/or password")

@@ -17,12 +17,20 @@ export default class SearchPartyResults extends Component {
     }
 
     constructAddParty = (event) => {
-        // console.log(sessionStorage.getItem("userId"))
-        const newAttend ={
-            partyId: Number(event.target.id),
-            userId: Number(sessionStorage.getItem("userId"))
+        
+        //do a verification to make sure the user who created the party doesn't end up 
+        // adding the party to attend
+        let user = Number(sessionStorage.getItem("userId"))
+        // console.log(event.target.parentNode.id)
+        if(user === Number(event.target.parentNode.id)){
+            window.alert("You're hosting the party, silly goose!")
+        }else{
+            const newAttend ={
+                partyId: Number(event.target.id),
+                userId: Number(sessionStorage.getItem("userId"))
+            }
+            this.props.attendParty(newAttend)
         }
-        this.props.attendParty(newAttend)
     }
 
     render() {
@@ -47,7 +55,7 @@ export default class SearchPartyResults extends Component {
                                         <CardText>Time: {party.time}</CardText>
                                         <CardText>Age Range: {party.ageRange}</CardText>
                                     </div>
-                                    <div>
+                                    <div id={party.user.id}>
                                         <img 
                                             src={add}
                                             alt="add"

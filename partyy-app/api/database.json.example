@@ -55,201 +55,208 @@
       "password": "kalen",
       "email": "kalen@gmail.com",
       "id": 8
-    },
-    {
-      "name": "jenny",
-      "username": "jennye",
-      "password": "jenny",
-      "email": "jenny@gmail.com",
-      "id": 9
-    },
-    {
-      "name": "chaffin",
-      "username": "chaffins",
-      "password": "chaffin",
-      "email": "chaffin@gmail.com",
-      "id": 10
-    },
-    {
-      "name": "jonathan",
-      "username": "jon",
-      "password": "jon",
-      "email": "jon@gmail.com",
-      "id": 11
-    },
-    {
-      "name": "Jon",
-      "username": "Jon1",
-      "password": "jon",
-      "email": "jon1@gmail.com",
-      "id": 12
     }
   ],
-  "party": [
+  "parties": [
     {
-      "userId": "1",
+      "userId": 1,
       "id": 1,
       "name": "Fun Times at Ridgedale!!!!!",
-      "streetAddress": "122 Northland Drive",
-      "zipcode": 37077,
-      "isPublic": false,
+      "address": "122 Northland Drive, Belleville, IL",
+      "zipcode": 62221,
       "ageRange": "25 to 30",
       "date": "Jan 23rd",
-      "time": "8pm"
+      "time": "8pm",
+      "lat": "",
+      "long": ""
     },
     {
       "id": 2,
       "userId": 2,
-      "isPublic": false,
       "name": "Let's Drink Up",
-      "streetAddress": "1808 Button Blvd",
+      "address": "1808 Button Blvd",
       "zipcode": 37076,
       "date": "May 4th",
       "time": "10pm",
-      "ageRange": "over 21"
+      "ageRange": "over 21",
+      "lat": "",
+      "long": ""
     },
     {
       "id": 3,
       "userId": 2,
-      "isPublic": false,
       "name": "Divorce Time",
-      "streetAddress": "1245 Penn Lane",
+      "address": "4751 Lebanon Pike, Nashville, TN",
       "zipcode": 37076,
       "date": "April 28th",
       "time": "10pm",
-      "ageRange": "over 21"
+      "ageRange": "over 21",
+      "lat": 36.2143095,
+      "long": -86.59186299999999
     },
     {
       "userId": 3,
-      "isPublic": false,
       "name": "Test bitch",
-      "streetAddress": "1620 Crystal Spring Ln",
+      "address": "1620 Crystal Spring Ln, Nashville, TN",
       "zipcode": 37076,
       "date": "April 30th",
       "time": "00:00",
       "ageRange": "over 21",
-      "id": 4
+      "id": 4,
+      "lat": "",
+      "long": ""
     },
     {
-      "userId": "1",
+      "userId": 1,
       "id": 7,
       "name": "please",
-      "streetAddress": "check this shit out ",
+      "address": "check this shit out ",
       "zipcode": 37076,
-      "isPublic": false,
       "ageRange": "over 21",
       "date": "August 20th",
-      "time": "9pm"
+      "time": "9pm",
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 1,
       "id": 9,
       "name": "checking for edit!",
-      "streetAddress": "hope it works",
+      "address": "hope it works",
       "zipcode": 11111,
-      "isPublic": false,
       "ageRange": "25 to 30",
       "date": "April 29th",
-      "time": "12pm"
+      "time": "12pm",
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 7,
       "id": 10,
       "name": "mvp!",
-      "streetAddress": "mvp!",
+      "address": "mvp!",
       "zipcode": 12345,
-      "isPublic": false,
       "ageRange": "21 to 25",
       "date": "2018-11-30",
-      "time": "12:59"
+      "time": "12:59",
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 7,
-      "isPublic": false,
       "name": "heyyyyyy",
-      "streetAddress": "123 holla ave",
+      "address": "123 holla ave",
       "zipcode": 12345,
       "date": "2018-11-30",
       "time": "23:58",
       "ageRange": "under 21",
-      "id": 11
+      "id": 11,
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 7,
-      "isPublic": false,
       "name": "Graduation",
-      "streetAddress": "1555 Erica Renee Court",
+      "address": "1555 Erica Renee Court, Belleville, IL",
       "zipcode": 62221,
       "date": "2019-05-03",
       "time": "12:00",
       "ageRange": "under 21",
-      "id": 12
-    },
-    {
-      "userId": 9,
-      "id": 13,
-      "name": "Retirement!",
-      "streetAddress": "6 Loisel Dr",
-      "zipcode": 37087,
-      "isPublic": false,
-      "ageRange": "25 to 30",
-      "date": "2019-12-31",
-      "time": "12:59"
+      "id": 12,
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 3,
-      "isPublic": false,
       "name": "divorce",
-      "streetAddress": "122 Northland Dr",
+      "address": "4751 Lebanon Pike, Hermitage, TN",
       "zipcode": 62221,
       "date": "2020-04-01",
       "time": "13:00",
       "ageRange": "25 to 30",
-      "id": 14
+      "id": 14,
+      "lat": "",
+      "long": ""
     },
     {
       "userId": 1,
-      "isPublic": false,
       "name": "session",
-      "streetAddress": "123 storage",
+      "address": "123 storage",
       "zipcode": 12345,
       "date": "2019-12-31",
       "time": "12:59",
       "ageRange": "under 21",
-      "id": 15
+      "id": 15,
+      "lat": "",
+      "long": ""
     },
     {
-      "userId": "11",
-      "id": 16,
-      "name": "Jameka is rude and mean",
-      "streetAddress": "123 Jameka ln",
-      "zipcode": 37075,
-      "isPublic": false,
-      "ageRange": "21 to 25",
-      "date": "2019-05-13",
-      "time": "12:22"
-    },
-    {
-      "userId": "1",
-      "isPublic": false,
-      "name": "jffjal;f",
-      "streetAddress": "jadsljfa",
-      "zipcode": 12345,
-      "date": "2020-05-03",
-      "time": "14:02",
-      "ageRange": "21 to 25",
-      "id": 18
-    },
-    {
-      "userId": "1",
+      "userId": 1,
       "id": 20,
       "name": "Testing this after style!!!!",
-      "streetAddress": "987 Lame Guy Dr",
-      "zipcode": 12345,
-      "isPublic": false,
+      "address": "1620 Crystal Spring Lane, Nashville, TN",
+      "zipcode": 37076,
       "ageRange": "over 21",
       "date": "May 23rd",
-      "time": "9pm "
+      "time": "9pm ",
+      "lat": 36.17317,
+      "long": -86.61187
+    },
+    {
+      "userId": 1,
+      "name": "Geolocation",
+      "address": "1620 Crystal Spring Lane",
+      "zipcode": 37076,
+      "date": "Dec 23rd",
+      "time": "10pm",
+      "ageRange": "over 21",
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "name": "test location",
+      "address": "1620 Crystal Spring Ln",
+      "zipcode": 37076,
+      "date": "May 21st",
+      "time": "11pm",
+      "ageRange": "21 to 25",
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "name": "Test Locationsssss",
+      "address": "4751 Lebanon Pike, Nashville, TN",
+      "zipcode": 37076,
+      "date": "March 3",
+      "time": "5pm",
+      "ageRange": "over 21",
+      "lat": 36.2143095,
+      "long": -86.59186299999999,
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "name": "Front End Celebration",
+      "address": " 314 11th Ave S, Nashville, TN ",
+      "zipcode": 12345,
+      "date": "May 21st",
+      "time": "9pm",
+      "ageRange": "over 21",
+      "lat": 36.1531479,
+      "long": -86.7835188,
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "name": "Parthenon Music Party",
+      "address": "2500 West End Ave, Nashville, TN ",
+      "zipcode": 37203,
+      "date": "July 5th",
+      "time": "7pm",
+      "ageRange": "over 21",
+      "lat": 36.1494148,
+      "long": -86.812823,
+      "id": 25
     }
   ],
   "attendees": [
@@ -266,7 +273,7 @@
     {
       "id": 3,
       "userId": 1,
-      "partyId": 1
+      "partyId": 20
     },
     {
       "id": 4,
@@ -292,6 +299,11 @@
       "id": 8,
       "userId": 3,
       "partyId": 2
+    },
+    {
+      "partyId": 24,
+      "userId": 1,
+      "id": 9
     }
   ]
 }

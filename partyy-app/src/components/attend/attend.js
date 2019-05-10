@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
+// import { Link } from 'react-router-dom'
 // import { GoogleApiWrapper} from 'google-maps-react';
 import { Card, CardText, CardTitle } from 'reactstrap'
 import Iframe from 'react-iframe'
@@ -31,6 +32,7 @@ class Attend extends Component {
         userLocation: { lat: 32, lng: 32 }
     }
 
+
     componentDidMount() {
         // using the building browswer's geolocation, get the user's location and set those lat/long values to the state
         navigator.geolocation.getCurrentPosition(position => {
@@ -42,6 +44,12 @@ class Attend extends Component {
             this.setState({ userLocation: { lat: lat, lng: long } })
         })
     }
+
+
+    // goToGoogleMaps = () => {
+    //     <Link to="" />
+    // }
+
 
     render() {
         let user = Number(sessionStorage.getItem('userId'))
@@ -85,15 +93,14 @@ class Attend extends Component {
                                 </div> */}
                                 <div>
                                     <Iframe
-                                        src={`https://www.google.com/maps/embed/v1/directions?key=AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU&origin=${this.state.userLocation.lat},${this.state.userLocation.lng}&destination=${attending.party.lat},${attending.party.long}`}
+                                        url={`https://www.google.com/maps/embed/v1/directions?key=AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU&origin=${this.state.userLocation.lat},${this.state.userLocation.lng}&destination=${attending.party.lat},${attending.party.long}`}
                                         height="100%"
                                         width="100%"
                                         display="initial"
-                                        // position="relative"
+                                        position="relative"
                                         zoom={12}
                                         className="iframeBox"
                                         title="my map"
-                                        
                                     ></Iframe>
                                 </div>
                             </Card>
