@@ -20,210 +20,11 @@
       "username": "tylerc",
       "email": "tyler@gmail.com",
       "password": "tyler"
-    },
-    {
-      "id": 4,
-      "name": "Shawn Williams",
-      "username": "shawnw",
-      "email": "shawn@gmail.com",
-      "password": "shawn"
-    },
-    {
-      "id": 5,
-      "name": "DeSean Webster",
-      "username": "deseanr",
-      "email": "desean@gmail.com",
-      "password": "desean"
-    },
-    {
-      "name": "toby",
-      "username": "tobye",
-      "password": "toby",
-      "email": "toby@gmail.com",
-      "id": 6
-    },
-    {
-      "name": "luke",
-      "username": "lukeq",
-      "password": "luke",
-      "email": "luke@gmail.com",
-      "id": 7
-    },
-    {
-      "name": "kalen",
-      "username": "kalena",
-      "password": "kalen",
-      "email": "kalen@gmail.com",
-      "id": 8
     }
   ],
   "parties": [
     {
-      "userId": 1,
-      "id": 1,
-      "name": "Fun Times at Ridgedale!!!!!",
-      "address": "122 Northland Drive, Belleville, IL",
-      "zipcode": 62221,
-      "ageRange": "25 to 30",
-      "date": "Jan 23rd",
-      "time": "8pm",
-      "lat": "",
-      "long": ""
-    },
-    {
-      "id": 2,
-      "userId": 2,
-      "name": "Let's Drink Up",
-      "address": "1808 Button Blvd",
-      "zipcode": 37076,
-      "date": "May 4th",
-      "time": "10pm",
-      "ageRange": "over 21",
-      "lat": "",
-      "long": ""
-    },
-    {
-      "id": 3,
-      "userId": 2,
-      "name": "Divorce Time",
-      "address": "4751 Lebanon Pike, Nashville, TN",
-      "zipcode": 37076,
-      "date": "April 28th",
-      "time": "10pm",
-      "ageRange": "over 21",
-      "lat": 36.2143095,
-      "long": -86.59186299999999
-    },
-    {
       "userId": 3,
-      "name": "Test bitch",
-      "address": "1620 Crystal Spring Ln, Nashville, TN",
-      "zipcode": 37076,
-      "date": "April 30th",
-      "time": "00:00",
-      "ageRange": "over 21",
-      "id": 4,
-      "lat": "",
-      "long": ""
-    },
-    {
-      "userId": 1,
-      "id": 7,
-      "name": "please",
-      "address": "check this shit out ",
-      "zipcode": 37076,
-      "ageRange": "over 21",
-      "date": "August 20th",
-      "time": "9pm",
-      "lat": "",
-      "long": ""
-    },
-    {
-      "userId": 1,
-      "id": 9,
-      "name": "checking for edit!",
-      "address": "hope it works",
-      "zipcode": 11111,
-      "ageRange": "25 to 30",
-      "date": "April 29th",
-      "time": "12pm",
-      "lat": "",
-      "long": ""
-    },
-    {
-      "userId": 7,
-      "id": 10,
-      "name": "mvp!",
-      "address": "mvp!",
-      "zipcode": 12345,
-      "ageRange": "21 to 25",
-      "date": "2018-11-30",
-      "time": "12:59",
-      "lat": "",
-      "long": ""
-    },
-    {
-      "userId": 7,
-      "name": "heyyyyyy",
-      "address": "123 holla ave",
-      "zipcode": 12345,
-      "date": "2018-11-30",
-      "time": "23:58",
-      "ageRange": "under 21",
-      "id": 11,
-      "lat": "",
-      "long": ""
-    },
-    {
-      "userId": 7,
-      "name": "Graduation",
-      "address": "1555 Erica Renee Court, Belleville, IL",
-      "zipcode": 62221,
-      "date": "2019-05-03",
-      "time": "12:00",
-      "ageRange": "under 21",
-      "id": 12,
-      "lat": "",
-      "long": ""
-    },
-    {
-      "userId": 3,
-      "name": "divorce",
-      "address": "4751 Lebanon Pike, Hermitage, TN",
-      "zipcode": 62221,
-      "date": "2020-04-01",
-      "time": "13:00",
-      "ageRange": "25 to 30",
-      "id": 14,
-      "lat": "",
-      "long": ""
-    },
-    {
-      "userId": 1,
-      "name": "session",
-      "address": "123 storage",
-      "zipcode": 12345,
-      "date": "2019-12-31",
-      "time": "12:59",
-      "ageRange": "under 21",
-      "id": 15,
-      "lat": "",
-      "long": ""
-    },
-    {
-      "userId": 1,
-      "id": 20,
-      "name": "Testing this after style!!!!",
-      "address": "1620 Crystal Spring Lane, Nashville, TN",
-      "zipcode": 37076,
-      "ageRange": "over 21",
-      "date": "May 23rd",
-      "time": "9pm ",
-      "lat": 36.17317,
-      "long": -86.61187
-    },
-    {
-      "userId": 1,
-      "name": "Geolocation",
-      "address": "1620 Crystal Spring Lane",
-      "zipcode": 37076,
-      "date": "Dec 23rd",
-      "time": "10pm",
-      "ageRange": "over 21",
-      "id": 21
-    },
-    {
-      "userId": 1,
-      "name": "test location",
-      "address": "1620 Crystal Spring Ln",
-      "zipcode": 37076,
-      "date": "May 21st",
-      "time": "11pm",
-      "ageRange": "21 to 25",
-      "id": 22
-    },
-    {
-      "userId": 1,
       "name": "Test Locationsssss",
       "address": "4751 Lebanon Pike, Nashville, TN",
       "zipcode": 37076,
@@ -232,10 +33,10 @@
       "ageRange": "over 21",
       "lat": 36.2143095,
       "long": -86.59186299999999,
-      "id": 23
+      "id": 1
     },
     {
-      "userId": 1,
+      "userId": 2,
       "name": "Front End Celebration",
       "address": " 314 11th Ave S, Nashville, TN ",
       "zipcode": 12345,
@@ -244,7 +45,7 @@
       "ageRange": "over 21",
       "lat": 36.1531479,
       "long": -86.7835188,
-      "id": 24
+      "id": 2
     },
     {
       "userId": 1,
@@ -256,54 +57,19 @@
       "ageRange": "over 21",
       "lat": 36.1494148,
       "long": -86.812823,
-      "id": 25
+      "id": 3
     }
   ],
   "attendees": [
     {
       "id": 1,
-      "userId": 4,
+      "userId": 1,
       "partyId": 1
     },
     {
-      "id": 2,
-      "userId": 2,
-      "partyId": 1
-    },
-    {
-      "id": 3,
+      "partyId": 2,
       "userId": 1,
-      "partyId": 20
-    },
-    {
-      "id": 4,
-      "userId": 3,
-      "partyId": 1
-    },
-    {
-      "id": 5,
-      "userId": 4,
-      "partyId": 2
-    },
-    {
-      "id": 6,
-      "userId": 2,
-      "partyId": 4
-    },
-    {
-      "id": 7,
-      "userId": 1,
-      "partyId": 3
-    },
-    {
-      "id": 8,
-      "userId": 3,
-      "partyId": 2
-    },
-    {
-      "partyId": 24,
-      "userId": 1,
-      "id": 9
+      "id": 2
     }
   ]
 }
