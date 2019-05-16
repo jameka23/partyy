@@ -4,7 +4,7 @@ import Geocode from "react-geocode";
 import { Button } from 'reactstrap'
 import './throwParty.css'
 import home from './home.png';
-import throwImg from './throw1.png';
+import throwImg from './throw2.png';
 
 
 // this is styling that will override reactstrap styling

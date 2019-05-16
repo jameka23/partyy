@@ -3,36 +3,43 @@
     width: 17%;
     margin-left: 3%;
     margin-top: 3%;
+    filter: drop-shadow(3px 3px 5px black);
 }
 
 .parent{
-    margin-top: 20%;
-    /* border: 2px solid purple; */
+    margin-top:30%;
+    /* border: 2px solid rgb(45, 4, 110);
+    background-color: yellow;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 7%;
+    margin-bottom: -30%; */
 }
 
 .homepage--parent{
     margin: 20%;
-    margin-top: 30%;
+    margin-top: 10%;
     /* border: black solid 1px; */
 }
 
 .homepage--firstChild{
     display: flex;
     flex-direction: row;
-    margin: 25px;
+    margin: 10px;
     /* border: 1px red solid; */
 }
 
 .homepage--secondChild{
     display: flex;
     flex-direction: row;
-    margin: 25px;
+    margin: 10px;
     /* border: 1px solid blue; */
 }
 
 img{
     height: 90px;
     width: 90px;
+    
 }
 
 .eyeCard .vipCard{
@@ -40,8 +47,21 @@ img{
     margin-bottom: 50px;
 }
 
+.eyeImg{
+    margin-left: -7%;
+}
+
+.searchLabel{
+    margin-right: 30%;
+}
+
 .eyeCard{
     margin-left: 5%;
+}
+
+
+.throwLabel{
+margin-right: 20%;
 }
 
 label{
@@ -57,7 +77,9 @@ label{
     margin-left: 15%;
     margin-right: -3%;
 }
-
+.eyeImg, .vipImg, .djImg, .throwImg{
+    filter: drop-shadow(2px 2px 5px black);
+}
 
 .header{
     margin-left: 12%;
