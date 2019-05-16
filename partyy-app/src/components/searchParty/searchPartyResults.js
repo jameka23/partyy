@@ -6,7 +6,8 @@ import add from './add.png'
 
 //override reactstrap css 
 const cardStyle = {
-    backgroundColor: 'rgb(164,94,240)'
+    backgroundColor: 'rgb(164,94,240)',
+    borderRadius: "5%"
 }
 
 export default class SearchPartyResults extends Component {
