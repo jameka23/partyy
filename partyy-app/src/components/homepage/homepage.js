@@ -88,7 +88,7 @@ class Homepage extends Component {
                                     className="eyeImg"
                                     alt="eye"
                                     onClick={this.handleSearchPary} />
-                                <label className="searchLabel">Search Party</label>
+                                <label className="searchLabelHome">Search Party</label>
                             </div>
                             <div className="vipCard">
                                 {/* <Button>

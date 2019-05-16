@@ -53,12 +53,14 @@ img{
     margin-left: -7%;
 }
 
-.searchLabel{
-    margin-right: 35%;
+.searchLabelHome{
+    margin-right: 30%;
+    /* border: 1px black solid; */
 }
 
 .eyeCard{
     margin-left: 5%;
+    /* border: 1px black solid; */
 }
 
 

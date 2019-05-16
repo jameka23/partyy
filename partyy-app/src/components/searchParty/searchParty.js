@@ -90,8 +90,8 @@ export default class SearchParty extends Component {
                         />
                     </div>
                     <div>
-                        <label htmlFor="searchAgeRange"
-                        className="searchLabel">Search By Age Range</label><br/>
+                        {/* <label htmlFor="searchAgeRange"
+                        className="searchLabel">and</label><br/> */}
                         <select
                         className="searchSelect"
                             id="searchAgeRange"

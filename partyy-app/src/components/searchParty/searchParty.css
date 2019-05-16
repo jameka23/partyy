@@ -2,6 +2,7 @@
     height: 225px;
     width: 295px;
     margin-left: 13%;
+    filter: drop-shadow(3px 3px 5px black);
 }
 
 .searchForm{
@@ -17,7 +18,7 @@
 }
 
 .searchLabel{
-    margin-left: 4%;
+    margin-left: 25%;
 }
 
 .searchSelect{
