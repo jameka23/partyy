@@ -1,14 +1,23 @@
-.party--container{
+.party--container {
     display: flex;
     flex-direction: column;
 }
 
-.user--parties{
+.user--parties {
     justify-content: center;
+    /* border-radius: 5%; */
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 5%;
     box-shadow: 45%;
+    background: rgba(114,60,232,1);
+    background: -moz-linear-gradient(top, rgba(114,60,232,1) 0%, rgba(114,60,232,1) 9%, rgba(115,0,247,1) 33%, rgba(204,139,41,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(114,60,232,1)), color-stop(9%, rgba(114,60,232,1)), color-stop(33%, rgba(115,0,247,1)), color-stop(100%, rgba(204,139,41,1)));
+    background: -webkit-linear-gradient(top, rgba(114,60,232,1) 0%, rgba(114,60,232,1) 9%, rgba(115,0,247,1) 33%, rgba(204,139,41,1) 100%);
+    background: -o-linear-gradient(top, rgba(114,60,232,1) 0%, rgba(114,60,232,1) 9%, rgba(115,0,247,1) 33%, rgba(204,139,41,1) 100%);
+    background: -ms-linear-gradient(top, rgba(114,60,232,1) 0%, rgba(114,60,232,1) 9%, rgba(115,0,247,1) 33%, rgba(204,139,41,1) 100%);
+    background: linear-gradient(to bottom, rgba(114,60,232,1) 0%, rgba(114,60,232,1) 9%, rgba(115,0,247,1) 33%, rgba(204,139,41,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#723ce8', endColorstr='#cc8b29', GradientType=0 );
 }
 
 .card {
@@ -17,29 +26,28 @@
     box-shadow: 5px 5px 5px #263238;
 }
 
-.home{
+.home {
     margin-bottom: 5%;
 }
 
-.host{
-    height: 200px;
-    width: 300px;
-    margin-bottom: -15%;
+.host {
+    height: 170px;
+    width: 280px;
+    margin-bottom: 1%;
     margin-left: 13%;
+    margin-top: -8%;
 }
 
-
-
-.listPartyBtns{
+.listPartyBtns {
     margin-left: 8%;
     margin-top: 6%;
 }
 
-.editBtn{
+.editBtn {
     margin-right: 16%;
 }
 
-.innerCardText{
+.innerCardText {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -52,7 +60,7 @@
     margin-bottom: 5%;
 }
 
-img{
+img {
     height: 70px;
     width: 70px;
 }

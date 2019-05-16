@@ -37,11 +37,12 @@ input{
     border-color: rgb(94, 172, 90);
     /* border-bottom: 2px solid rgb(126, 81, 201); */
     background: transparent;
-    filter: drop-shadow(2px 2px 10px black);
+    
 }
 
 input:focus{
     border-color: rgb(126, 81, 201);
+    filter: drop-shadow(1px 4px 14px blue);
 }
 
 .inputField{

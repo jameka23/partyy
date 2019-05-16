@@ -3,6 +3,7 @@
     width: 65px;
     margin-left: 2%;
     margin-top: 3%;
+    filter: drop-shadow(3px 3px 5px black);
 }
 
 .editLogo{
@@ -10,6 +11,7 @@
     width: 290px;
     margin-bottom: -15%;
     margin-left: 10%;
+    filter: drop-shadow(3px 3px 5px black);
 }
 
 .editForm{
@@ -47,6 +49,8 @@
 
 .editSaveBtn{
     margin-left: 39%;
+    filter: drop-shadow(3px 3px 5px black);
+    margin-bottom: 5%;
 }
 
 select{

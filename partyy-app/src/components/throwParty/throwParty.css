@@ -83,5 +83,5 @@ input:focus{
 select{
     color: black;
     background-color: blue;
-    filter: drop-shadow(3px 3px 5px black);
+    /* filter: drop-shadow(3px 3px 15px black); */
 }
