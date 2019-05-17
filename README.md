@@ -1,5 +1,5 @@
-![party](./party.png)
-
+<!-- ![party](./party.png) -->
+<img align="center" src="./party.png">
 Welcome to pArTyy! app. Are you a one person wolf pack? Need friends? Then that's exactly what _pArTyy!_ is, an application that allows users to do one of the following: 
 + 1. create parties that you can set to public/private and invite users
 + 2. find local parties that are public to the general public
@@ -61,7 +61,7 @@ Below are the steps to view the mobile version via Chrome Dev Tools:
 + choose the device you'd like to view the app on
 ![pick](./pickDevice.png)
 
-÷ lastly, add the device frame
++ lastly, add the device frame
 ![frame](./deviceFrame.png)
 
 If you using, Xcode's Simulator, open up Safari or Chrome on the simulator then enter in the following url and press enter 
@@ -99,7 +99,7 @@ http://localhost:3000
 
 * [FlatIcon](www.flaticon.com)- Icon made by Freepik
 * [Freepik](http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank") - CC 3.0 BY
-* [Darius_Dan](https://www.flaticon.com/authors/darius-dan" title="Darius Dan") - FlatIcon Author
-* [Kiranshastry](https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry") - FlatIcon Author
-* [Smashicons](https://www.flaticon.com/<?=_('authors').'/'?>smashicons" title="Smashicons") - FlatIcon Author
+* [Darius_Dan](https://www.flaticon.com/authors/darius-dan") - FlatIcon Author
+* [Kiranshastry](https://www.flaticon.com/authors/kiranshastry") - FlatIcon Author
+* [Smashicons](https://www.flaticon.com/<?=_('authors').'/'?>smashicons") - FlatIcon Author
 * [PurpleBooth](https://gist.githubusercontent.com/PurpleBooth/109311bb0361f32d87a2/raw/8254b53ab8dcb18afc64287aaddd9e5b6059f880/README-Template.md) - For their template
