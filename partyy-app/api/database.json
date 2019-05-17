@@ -25,7 +25,7 @@
   "parties": [
     {
       "userId": 3,
-      "name": "Locationsssss After Party",
+      "name": "Rich After Party",
       "address": "4751 Lebanon Pike, Nashville, TN",
       "zipcode": 37076,
       "date": "March 3",
@@ -37,15 +37,15 @@
     },
     {
       "userId": 2,
+      "id": 2,
       "name": "Front End Celebration",
       "address": " 314 11th Ave S, Nashville, TN ",
       "zipcode": 12345,
-      "date": "May 21st",
-      "time": "9pm",
       "ageRange": "over 21",
+      "date": "May 22nd",
+      "time": "9pm",
       "lat": 36.1531479,
-      "long": -86.7835188,
-      "id": 2
+      "long": -86.7835188
     },
     {
       "userId": 1,
@@ -82,6 +82,30 @@
       "time": "4pm",
       "lat": 36.33501,
       "long": -86.62567779999999
+    },
+    {
+      "userId": 2,
+      "name": "GoT Block Watch Party",
+      "address": "1200 Forrest Park Dr, Nashville, TN ",
+      "zipcode": 37076,
+      "date": "May 30th",
+      "time": "9:30 pm ",
+      "ageRange": "over 21",
+      "lat": 36.0892008,
+      "long": -86.8766311,
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "id": 7,
+      "name": "Townies Throwdown!",
+      "address": "900 Rosa L Parks Blvd, Nashville, TN",
+      "zipcode": 37076,
+      "ageRange": "under 21",
+      "date": "May 31st",
+      "time": "8pm",
+      "lat": 36.1706189,
+      "long": -86.7888584
     }
   ],
   "attendees": [
@@ -99,6 +123,11 @@
       "partyId": 2,
       "userId": 3,
       "id": 6
+    },
+    {
+      "partyId": 1,
+      "userId": 2,
+      "id": 8
     }
   ]
 }

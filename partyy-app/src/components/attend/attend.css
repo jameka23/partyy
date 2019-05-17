@@ -6,11 +6,35 @@
     margin-bottom: -6%;
 }
 
+.parentCardContent{
+    display: flex;
+    flex-direction: column;
+}
+
 .attendingCards{
+    justify-content: center;
+    align-content: center;
     padding: 4%;
     margin-bottom: 5%;
     box-shadow: 10px 10px 30px #263238
 }
+
+.innerAttendCard{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+/* .attendHeaders{
+    position: relative;
+    display: inline-block;
+    padding: 15px 24px;
+    background-image: linear-gradient(rgb(177, 83, 28), rgb(226, 161, 40));
+    border-radius: 5%;
+    box-shadow: 0px 1px 4px -2px #333;
+    text-shadow: 0px 0px #333;
+    margin-bottom: 3%;
+} */
 
 .address{
     margin-left: 35%;

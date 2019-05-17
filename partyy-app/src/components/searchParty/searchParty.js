@@ -93,7 +93,7 @@ export default class SearchParty extends Component {
                         {/* <label htmlFor="searchAgeRange"
                         className="searchLabel">and</label><br/> */}
                         <select
-                        className="searchSelect"
+                        className="searchPartySelect"
                             id="searchAgeRange"
                             onChange={(event) => { this.setState({ searchAgeRange: event.target.value }) }}
                             value={this.state.searchAgeRange}
