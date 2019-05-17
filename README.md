@@ -1,5 +1,4 @@
-<!-- ![party](./party.png) -->
-<img alignment="center" src="./party.png">
+![](./partyy.gif)
 Welcome to pArTyy! app. Are you a one person wolf pack? Need friends? Then that's exactly what _pArTyy!_ is, an application that allows users to do one of the following: 
 + 1. create parties that you can set to public/private and invite users
 + 2. find local parties that are public to the general public
@@ -56,10 +55,8 @@ The next thing to do is head over to your browser. Since this application was to
 Below are the steps to view the mobile version via Chrome Dev Tools:
 
 + click on the _toggle device toolbar_
-![device](./device.png)
 
 + choose the device you'd like to view the app on
-![pick](./pickDevice.png)
 
 + lastly, add the device frame
 ![frame](./deviceFrame.png)
