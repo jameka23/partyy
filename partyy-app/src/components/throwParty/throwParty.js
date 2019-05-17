@@ -53,15 +53,6 @@ class ThrowParty extends Component {
             window.alert("Please enter a zip code!")
         } else {
 
-            // make a call to google maps
-            // fetch("https://maps.googleapis.com/maps/api/js?key=AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU")
-            // .then(results, status =>{
-            //     if(status === "OK"){
-            //         console.log('ok')
-            //         console.log(results)
-            //     }
-            // })
-
             // using the geolocation npm, I am able to convert the user's party location to lat, lng values and therefore use it for google map's api
             Geocode.fromAddress(this.state.address).then(response => {
                 const { lat, lng } = response.results[0].geometry.location;
@@ -74,8 +65,8 @@ class ThrowParty extends Component {
                     date: this.state.date,
                     time: this.state.time,
                     ageRange: this.state.ageRange,
-                    lat: lat,
-                    long: lng
+                    lat: Number(lat),
+                    long: Number(lng)
                 }
                 // console.log(newParty)
                 this.props.createParty(newParty)

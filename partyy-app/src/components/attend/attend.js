@@ -7,20 +7,15 @@ import Iframe from 'react-iframe'
 import logo from './logo1.png'
 import './attend.css'
 import home from './home.png'
+import pin from './pin.png'
 // import address from './address.png'
 
 // override boostrap
 const cardStyle = {
-    backgroundColor: 'rgb(224,149,60)'
+    backgroundColor: 'rgb(224,149,60)',
+    borderRadius: '5%'
 }
 
-
-// set the map height and witdh
-// const mapStyle = {
-//     height: "100%",
-//     witdh: "100%"
-
-// }
 
 class Attend extends Component {
 
@@ -45,10 +40,6 @@ class Attend extends Component {
         })
     }
 
-
-    // goToGoogleMaps = () => {
-    //     <Link to="" />
-    // }
 
 
     render() {
@@ -77,7 +68,7 @@ class Attend extends Component {
                         .map(attending => (
                             <Card key={attending.id}
                                 style={cardStyle}
-                                className="attendingCards">
+                                className="attendingCards glossy">
                                 <div key={attending.id}>
                                     <h3><CardTitle>{attending.party.name}</CardTitle></h3>
                                     <CardText>Where: {attending.party.address}</CardText>
@@ -102,6 +93,20 @@ class Attend extends Component {
                                         className="iframeBox"
                                         title="my map"
                                     ></Iframe>
+                                </div>
+                                <div>
+                                    <img 
+                                        src={pin}
+                                        alt="pin"
+                                        onClick={()=>{
+                                            let confirmDelete = window.confirm(`Are you sure you no longer want to attend  ${attending.party.name} anymore?`)
+
+                                            if(confirmDelete){
+                                                this.props.deleteAttendingParty(attending.id)
+                                            }
+                                        }}
+                                        className="pin"
+                                    />
                                 </div>
                             </Card>
                         ))

@@ -18,9 +18,11 @@ export default class SearchPartyResults extends Component {
     }
 
     constructAddParty = (event) => {
-        
+        console.log(event.target)
         //do a verification to make sure the user who created the party doesn't end up 
         // adding the party to attend
+        // let attendingParty
+        // this.props.attend.map(attendingParty => ())
         let user = Number(sessionStorage.getItem("userId"))
         // console.log(event.target.parentNode.id)
         if(user === Number(event.target.parentNode.id)){
@@ -32,10 +34,10 @@ export default class SearchPartyResults extends Component {
             }
             this.props.attendParty(newAttend)
         }
+
     }
 
     render() {
-
         return (
             <React.Fragment>
 

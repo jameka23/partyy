@@ -7,7 +7,7 @@ import {
 import deleteicon from './delete.png'
 import './listParty.css'
 import home from './home.png'
-import host from './host3.png'
+import host from './host5.png'
 import edit from './pencil.png'
 
 

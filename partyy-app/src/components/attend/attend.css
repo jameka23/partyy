@@ -23,3 +23,9 @@
     box-shadow: 5px 5px 10px #263238;
 }
 
+.pin{
+    height: 65px;
+    width: 65px;
+    margin-top: 5%;
+    margin-left: 38%;
+}

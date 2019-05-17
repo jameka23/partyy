@@ -50,12 +50,14 @@
     {
       "userId": 1,
       "id": 3,
-      "name": "Parthenon Music Party",
+      "name": "Parthenon Party",
       "address": "2500 West End Ave, Nashville, TN ",
       "zipcode": 37203,
       "ageRange": "over 21",
       "date": "July 5th",
-      "time": "8pm"
+      "time": "8pm",
+      "lat": 36.1494148,
+      "long": -86.812823
     },
     {
       "userId": 3,
@@ -77,29 +79,21 @@
       "zipcode": 37075,
       "ageRange": "over 21",
       "date": "Aug 31st",
-      "time": "4pm"
+      "time": "4pm",
+      "lat": 36.33501,
+      "long": -86.62567779999999
     }
   ],
   "attendees": [
     {
-      "id": 1,
+      "partyId": 5,
       "userId": 1,
-      "partyId": 1
-    },
-    {
-      "partyId": 2,
-      "userId": 1,
-      "id": 2
+      "id": 4
     },
     {
       "partyId": 3,
       "userId": 3,
-      "id": 3
-    },
-    {
-      "partyId": 5,
-      "userId": 1,
-      "id": 4
+      "id": 5
     }
   ]
 }

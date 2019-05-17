@@ -115,6 +115,15 @@ class ApplicationView extends Component {
             .then(() => this.props.history.push('/attend'))
     }
 
+
+    // this function will allow users to delete a party that they are going to attend
+    deleteAttendingParty = partyToDeleteId => {
+        attendManager.delete(partyToDeleteId)
+            .then(() => attendManager.all())
+            .then(attending => this.setState({attend: attending}))
+            .then(() => this.props.history.push('/attend')) 
+    }
+
     ageValues = [
         {
             id: 1,
@@ -194,6 +203,7 @@ class ApplicationView extends Component {
                     if (this.isAuthenticated()) {
                         return <SearchParty
                             {...props}
+                            attend={this.state.attend}
                             ageValues={this.ageValues}
                             parties={this.state.parties} 
                             attendParty={this.attendParty}/>
@@ -217,7 +227,7 @@ class ApplicationView extends Component {
                             parties={this.state.parties}
                             users={this.state.users}
                             attend={this.state.attend}
-                            
+                            deleteAttendingParty={this.deleteAttendingParty}
                         />
                     }else{
                         return <Redirect to='/login' />

@@ -129,6 +129,7 @@ export default class SearchParty extends Component {
                     </div>
                 </div>
                         {this.state.goSearch && <SearchPartyResults parties={this.props.parties} searchAgeRange={this.state.searchAgeRange} searchZipcode={this.state.searchZipcode} 
+                        attend={this.props.attend}
                         attendParty={this.props.attendParty}
                         />}
             </React.Fragment >
