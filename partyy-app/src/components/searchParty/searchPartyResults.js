@@ -18,22 +18,29 @@ export default class SearchPartyResults extends Component {
     }
 
     constructAddParty = (event) => {
-        console.log(event.target)
-        //do a verification to make sure the user who created the party doesn't end up 
-        // adding the party to attend
-        // let attendingParty
-        // this.props.attend.map(attendingParty => ())
-        let user = Number(sessionStorage.getItem("userId"))
-        // console.log(event.target.parentNode.id)
-        if(user === Number(event.target.parentNode.id)){
-            window.alert("You're hosting the party, silly goose!")
-        }else{
-            const newAttend ={
-                partyId: Number(event.target.id),
-                userId: Number(sessionStorage.getItem("userId"))
+        //do a verification to make sure the user who created the party doesn't end up adding the party to attend and not add a party twice
+
+        let partyId = event.target.id
+        let attendingParty = this.props.attend.find(attendingParty => 
+            attendingParty.party.id === Number(partyId) && attendingParty.user.id === Number(sessionStorage.getItem("userId"))
+        )
+        // console.log(attendingParty)
+
+        if(!attendingParty){
+            let user = Number(sessionStorage.getItem("userId"))
+            if(user === Number(event.target.parentNode.id)){
+                window.alert("You're hosting the party, silly goose!")
+            }else{
+                const newAttend ={
+                    partyId: Number(event.target.id),
+                    userId: Number(sessionStorage.getItem("userId"))
+                }
+                this.props.attendParty(newAttend)
             }
-            this.props.attendParty(newAttend)
+        }else{
+            window.alert("You are already going to this party, bud!")
         }
+
 
     }
 
