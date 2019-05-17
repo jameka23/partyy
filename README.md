@@ -1,8 +1,9 @@
-![](./partyy.gif)
-Welcome to pArTyy! app. Are you a one person wolf pack? Need friends? Then that's exactly what _pArTyy!_ is, an application that allows users to do one of the following: 
+
+#Welcome to pArTyy! app. Are you a one person wolf pack? Need friends? Then that's exactly what _pArTyy!_ is, an application that allows users to do one of the following: 
 + 1. create parties that you can set to public/private and invite users
 + 2. find local parties that are public to the general public
 
+![](./partyy.gif)
 
 ## Getting Started
 
