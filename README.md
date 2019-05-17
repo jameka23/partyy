@@ -1,5 +1,5 @@
 <!-- ![party](./party.png) -->
-<img align="center" src="./party.png">
+<img alignment="center" src="./party.png">
 Welcome to pArTyy! app. Are you a one person wolf pack? Need friends? Then that's exactly what _pArTyy!_ is, an application that allows users to do one of the following: 
 + 1. create parties that you can set to public/private and invite users
 + 2. find local parties that are public to the general public
@@ -98,7 +98,7 @@ http://localhost:3000
 ## Acknowledgments
 
 * [FlatIcon](www.flaticon.com)- Icon made by Freepik
-* [Freepik](http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank") - CC 3.0 BY
+* [Freepik](http://creativecommons.org/licenses/by/3.0/") - CC 3.0 BY
 * [Darius_Dan](https://www.flaticon.com/authors/darius-dan") - FlatIcon Author
 * [Kiranshastry](https://www.flaticon.com/authors/kiranshastry") - FlatIcon Author
 * [Smashicons](https://www.flaticon.com/<?=_('authors').'/'?>smashicons") - FlatIcon Author
