@@ -1,4 +1,4 @@
-# pArTyy!
+![party](./party.png)
 
 Welcome to pArTyy! app. Are you a one person wolf pack? Need friends? Then that's exactly what _pArTyy!_ is, an application that allows users to do one of the following: 
 + 1. create parties that you can set to public/private and invite users
@@ -48,10 +48,21 @@ Then enter the following command to start using the application
 npm start
 ```
 Your terminal should look similar to this, with no read errors: 
-![grunt example]()
+![npm example](./npm.png)
 
 
-The next thing to do is head over to your browser. Since this application was to mimic a mobile app, the best experience is to user Xcode's Simulator or use the Chrome Dev Tools and choose a mobile view.
+The next thing to do is head over to your browser. Since this application was to mimic a mobile app, the best experience is to user Xcode's Simulator or use the Chrome Dev Tools and choose a mobile view such as the iPhone 6/7/8 with mobile framing.
+
+Below are the steps to view the mobile version via Chrome Dev Tools:
+
++ click on the _toggle device toolbar_
+![device](./device.png)
+
++ choose the device you'd like to view the app on
+![pick](./pickDevice.png)
+
+÷ lastly, add the device frame
+![frame](./deviceFrame.png)
 
 If you using, Xcode's Simulator, open up Safari or Chrome on the simulator then enter in the following url and press enter 
 ```
@@ -76,6 +87,7 @@ http://localhost:3000
 * [reactstrap](https://reactstrap.github.io/) - Particular styling
 * [CSS](https://css-tricks.com/) - Main styling
 * [Bootstrap4.3](https://getbootstrap.com/) - Used for some styling
+* [geocode](https://www.npmjs.com/package/react-geocode) - npm package for lat/long conversion
 
 
 
