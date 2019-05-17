@@ -83,9 +83,6 @@ http://localhost:3000
 
 * **Jameka Echols** 
 
-
-
-
 ## Acknowledgments
 
 * [FlatIcon](www.flaticon.com)- Icon made by Freepik
