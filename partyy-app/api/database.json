@@ -85,15 +85,15 @@
     },
     {
       "userId": 2,
-      "name": "GoT Block Watch Party",
+      "id": 6,
+      "name": "#GoT Block Watch Party",
       "address": "1200 Forrest Park Dr, Nashville, TN ",
       "zipcode": 37076,
+      "ageRange": "over 21",
       "date": "May 30th",
       "time": "9:30 pm ",
-      "ageRange": "over 21",
       "lat": 36.0892008,
-      "long": -86.8766311,
-      "id": 6
+      "long": -86.8766311
     },
     {
       "userId": 2,
@@ -106,6 +106,18 @@
       "time": "8pm",
       "lat": 36.1706189,
       "long": -86.7888584
+    },
+    {
+      "userId": 1,
+      "name": "Rich Folks Bash",
+      "address": "9681 Concord Rd, Brentwood, TN",
+      "zipcode": 37027,
+      "date": "Jun 1st",
+      "time": "7pm",
+      "ageRange": "over 21",
+      "lat": 35.9836549,
+      "long": -86.73068099999999,
+      "id": 8
     }
   ],
   "attendees": [
