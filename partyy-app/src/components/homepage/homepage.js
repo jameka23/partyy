@@ -9,6 +9,10 @@ import vip from './images/vip.png'
 import eye from './images/eye-glasses.png'
 import exit from './images/exit.png'
 
+// const bckgrndColor = {
+//     backgroundColor: "yellow"
+// }
+
 class Homepage extends Component {
 
     // this function will handle the user logging out of the application
@@ -37,29 +41,19 @@ class Homepage extends Component {
         // console.log(currUser, this.props.users)
         return (
             <React.Fragment>
-                {/* <Button
-                    className="logoutButton"
-                    onClick={this.handleLogout}
-                >Logout</Button> */}
-                <img 
+                <img
                     src={exit}
                     alt="exit"
                     className="exit"
-                    onClick= {this.handleLogout}
+                    onClick={this.handleLogout}
                 />
                 <div>
-                    <img 
-                    src={header}
-                    alt="header"
-                    className="header"
-                    
-                    />
-                    {/* {
-                        this.props.users.filter(user => user.id === currUser).map(user => (
+                    <img
+                        src={header}
+                        alt="header"
+                        className="header"
 
-                            <h1 className="header">Welcome, {user.name}!</h1>
-                        ))
-                    } */}
+                    />
                 </div>
                 <div className="parent">
                     <div className="homepage--parent">
@@ -94,7 +88,7 @@ class Homepage extends Component {
                                     className="eyeImg"
                                     alt="eye"
                                     onClick={this.handleSearchPary} />
-                                <label className="searchLabel">Search Party</label>
+                                <label className="searchLabelHome">Search Party</label>
                             </div>
                             <div className="vipCard">
                                 {/* <Button>

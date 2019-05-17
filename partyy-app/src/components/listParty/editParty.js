@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
+import Geocode from "react-geocode";
 import PartyManager from '../modules/partyManager'
 import { Button } from 'reactstrap'
 import back from './back.png'
@@ -24,6 +25,8 @@ class EditParty extends Component {
         partyTime: '',
         partyAgeRange: '',
         userId: sessionStorage.getItem("userId"),
+        lat: '',
+        long: '',
         open: false
     }
 
@@ -44,21 +47,31 @@ class EditParty extends Component {
     // this function will create the edited party
     constructEditedParty = event => {
         event.preventDefault() // keeps from having the page go elsewhere 
-        console.log(typeof (this.state.partyDate))
+        // console.log(typeof (this.state.partyDate))
         if (this.state.partyZipCode === "") {
             window.alert("Please enter a zip code!")
         } else {
-            const editedParty = {
-                userId: Number(sessionStorage.getItem("userId")),
-                id: parseInt(this.props.match.params.partyId),
-                name: this.state.partyName,
-                address: this.state.partyStreetAddress,
-                zipcode: Number(this.state.partyZipCode),
-                ageRange: this.state.partyAgeRange,
-                date: this.state.partyDate,
-                time: this.state.partyTime
-            }
-            this.props.updateParty(editedParty, this.props.match.params.partyId)
+
+
+
+            // using the geolocation npm, I am able to convert the user's party location to lat, lng values and therefore use it for google map's api
+            Geocode.fromAddress(this.state.partyStreetAddress).then(response => {
+                const { lat, lng } = response.results[0].geometry.location;
+
+                const editedParty = {
+                    userId: Number(sessionStorage.getItem("userId")),
+                    id: parseInt(this.props.match.params.partyId),
+                    name: this.state.partyName,
+                    address: this.state.partyStreetAddress,
+                    zipcode: Number(this.state.partyZipCode),
+                    ageRange: this.state.partyAgeRange,
+                    date: this.state.partyDate,
+                    time: this.state.partyTime,
+                    lat: lat,
+                    long: lng
+                }
+                this.props.updateParty(editedParty, this.props.match.params.partyId)
+            })
         }
     }
 
@@ -73,6 +86,8 @@ class EditParty extends Component {
                     partyDate: party.date,
                     partyTime: party.time,
                     partyAgeRange: party.ageRange,
+                    lat: party.lat,
+                    long: party.long,
                     userId: sessionStorage.getItem("userId"),
                 })
             })

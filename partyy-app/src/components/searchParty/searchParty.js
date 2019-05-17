@@ -90,10 +90,10 @@ export default class SearchParty extends Component {
                         />
                     </div>
                     <div>
-                        <label htmlFor="searchAgeRange"
-                        className="searchLabel">Search By Age Range</label><br/>
+                        {/* <label htmlFor="searchAgeRange"
+                        className="searchLabel">and</label><br/> */}
                         <select
-                        className="searchSelect"
+                        className="searchPartySelect"
                             id="searchAgeRange"
                             onChange={(event) => { this.setState({ searchAgeRange: event.target.value }) }}
                             value={this.state.searchAgeRange}
@@ -129,6 +129,7 @@ export default class SearchParty extends Component {
                     </div>
                 </div>
                         {this.state.goSearch && <SearchPartyResults parties={this.props.parties} searchAgeRange={this.state.searchAgeRange} searchZipcode={this.state.searchZipcode} 
+                        attend={this.props.attend}
                         attendParty={this.props.attendParty}
                         />}
             </React.Fragment >

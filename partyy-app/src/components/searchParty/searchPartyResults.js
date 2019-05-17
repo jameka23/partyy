@@ -6,7 +6,8 @@ import add from './add.png'
 
 //override reactstrap css 
 const cardStyle = {
-    backgroundColor: 'rgb(164,94,240)'
+    backgroundColor: 'rgb(164,94,240)',
+    borderRadius: "5%"
 }
 
 export default class SearchPartyResults extends Component {
@@ -17,24 +18,33 @@ export default class SearchPartyResults extends Component {
     }
 
     constructAddParty = (event) => {
-        
-        //do a verification to make sure the user who created the party doesn't end up 
-        // adding the party to attend
-        let user = Number(sessionStorage.getItem("userId"))
-        // console.log(event.target.parentNode.id)
-        if(user === Number(event.target.parentNode.id)){
-            window.alert("You're hosting the party, silly goose!")
-        }else{
-            const newAttend ={
-                partyId: Number(event.target.id),
-                userId: Number(sessionStorage.getItem("userId"))
+        //do a verification to make sure the user who created the party doesn't end up adding the party to attend and not add a party twice
+
+        let partyId = event.target.id
+        let attendingParty = this.props.attend.find(attendingParty => 
+            attendingParty.party.id === Number(partyId) && attendingParty.user.id === Number(sessionStorage.getItem("userId"))
+        )
+        // console.log(attendingParty)
+
+        if(!attendingParty){
+            let user = Number(sessionStorage.getItem("userId"))
+            if(user === Number(event.target.parentNode.id)){
+                window.alert("You're hosting the party, silly goose!")
+            }else{
+                const newAttend ={
+                    partyId: Number(event.target.id),
+                    userId: Number(sessionStorage.getItem("userId"))
+                }
+                this.props.attendParty(newAttend)
             }
-            this.props.attendParty(newAttend)
+        }else{
+            window.alert("You are already going to this party, bud!")
         }
+
+
     }
 
     render() {
-
         return (
             <React.Fragment>
 
@@ -50,7 +60,7 @@ export default class SearchPartyResults extends Component {
                                         <CardTitle className="title">{party.name}</CardTitle>
                                     <div key={party.id}>
                                         <CardText>Address: {party.address}</CardText>
-                                        <CardText>Zipcode: {party.zipcode}</CardText>
+                                        {/* <CardText>Zipcode: {party.zipcode}</CardText> */}
                                         <CardText>Date: {party.date}</CardText>
                                         <CardText>Time: {party.time}</CardText>
                                         <CardText>Age Range: {party.ageRange}</CardText>

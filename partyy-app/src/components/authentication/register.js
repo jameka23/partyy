@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { Button } from 'reactstrap'
 import './register.css'
-import reg from './register1.png'
+import reg from './register2.png'
 import back from './back.png'
 
 // this is to override reactstrap's style
 const regBtnStyle ={
     color: 'black',
-    backgroundColor: 'rgb(232, 112, 97)'
+    // color: 'white',
+    backgroundColor: 'rgb(198, 68, 52)'
 }
 
 

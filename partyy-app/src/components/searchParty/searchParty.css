@@ -2,6 +2,7 @@
     height: 225px;
     width: 295px;
     margin-left: 13%;
+    filter: drop-shadow(3px 3px 5px black);
 }
 
 .searchForm{
@@ -14,10 +15,11 @@
 .zipcodeInput{
     margin-bottom: 5%;
     margin-left: 2%;
+    /* border-radius: 30%; */
 }
 
 .searchLabel{
-    margin-left: 4%;
+    margin-left: 25%;
 }
 
 .searchSelect{
@@ -28,11 +30,12 @@
 .searchBtn{
     margin-left: 16%;
     /* margin-bottom: %; */
+    filter: drop-shadow(3px 3px 5px black);
 }
 
 .dots{
     margin-left: 18%;
-    margin-top: -4%;
+    margin-top: -2%;
 }
 select{
     color: black;
@@ -40,4 +43,10 @@ select{
 }
 #searchAgeRange{
     background-color: rgb(199, 121, 223); 
+}
+
+.searchPartySelect{
+    filter: drop-shadow(3px 3px 5px black);
+    margin-left: 12%;
+    margin-bottom: 7%;
 }

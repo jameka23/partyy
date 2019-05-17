@@ -7,20 +7,16 @@ import Iframe from 'react-iframe'
 import logo from './logo1.png'
 import './attend.css'
 import home from './home.png'
+import pin from './pin.png'
 // import address from './address.png'
 
 // override boostrap
 const cardStyle = {
-    backgroundColor: 'rgb(224,149,60)'
+    backgroundColor: 'rgb(224,149,60)',
+    borderRadius: '5%',
+    // justifyContent: 'center'
 }
 
-
-// set the map height and witdh
-// const mapStyle = {
-//     height: "100%",
-//     witdh: "100%"
-
-// }
 
 class Attend extends Component {
 
@@ -46,10 +42,6 @@ class Attend extends Component {
     }
 
 
-    // goToGoogleMaps = () => {
-    //     <Link to="" />
-    // }
-
 
     render() {
         let user = Number(sessionStorage.getItem('userId'))
@@ -72,41 +64,51 @@ class Attend extends Component {
                         className="logoAttend"
                     />
                 </div>
-                {
-                    this.props.attend.filter(attending => attending.userId === user)
-                        .map(attending => (
-                            <Card key={attending.id}
-                                style={cardStyle}
-                                className="attendingCards">
-                                <div key={attending.id}>
-                                    <h3><CardTitle>{attending.party.name}</CardTitle></h3>
-                                    <CardText>Where: {attending.party.address}</CardText>
-                                    <CardText>When: {attending.party.date}</CardText>
-                                    <CardText>At: {attending.party.time}</CardText>
-                                </div>
-                                {/* <div>
-                                    <img
-                                        src={address}
-                                        alt="address"
-                                        className="address"
-                                    />
-                                </div> */}
-                                <div>
-                                    <Iframe
-                                        url={`https://www.google.com/maps/embed/v1/directions?key=AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU&origin=${this.state.userLocation.lat},${this.state.userLocation.lng}&destination=${attending.party.lat},${attending.party.long}`}
-                                        height="100%"
-                                        width="100%"
-                                        display="initial"
-                                        position="relative"
-                                        zoom={12}
-                                        className="iframeBox"
-                                        title="my map"
-                                    ></Iframe>
-                                </div>
-                            </Card>
-                        ))
-                }
+                <div className="parentCardContent">
+                    {
+                        this.props.attend.filter(attending => attending.userId === user)
+                            .map(attending => (
+                                <Card key={attending.id}
+                                    style={cardStyle}
+                                    className="attendingCards">
+                                    <div key={attending.id} className="innerAttendCard">
+                                    <div className="attendHeaders">
+                                        <h3><CardTitle>{attending.party.name}</CardTitle></h3>
+                                    </div>
+                                        <CardText>Where: {attending.party.address}</CardText>
+                                        <CardText>When: {attending.party.date}</CardText>
+                                        <CardText>At: {attending.party.time}</CardText>
+                                    </div>
+                                    <div>
+                                        <Iframe
+                                            url={`https://www.google.com/maps/embed/v1/directions?key=AIzaSyCG2YSwz6R1RhKp8XwAWdUy3NY8noP18kU&origin=${this.state.userLocation.lat},${this.state.userLocation.lng}&destination=${attending.party.lat},${attending.party.long}`}
+                                            height="100%"
+                                            width="100%"
+                                            display="initial"
+                                            position="relative"
+                                            zoom={12}
+                                            className="iframeBox"
+                                            title="my map"
+                                        ></Iframe>
+                                    </div>
+                                    <div>
+                                        <img
+                                            src={pin}
+                                            alt="pin"
+                                            onClick={() => {
+                                                let confirmDelete = window.confirm(`Are you sure you no longer want to attend  ${attending.party.name} anymore?`)
 
+                                                if (confirmDelete) {
+                                                    this.props.deleteAttendingParty(attending.id)
+                                                }
+                                            }}
+                                            className="pin"
+                                        />
+                                    </div>
+                                </Card>
+                            ))
+                    }
+                </div>
             </React.Fragment>
         )
     }
