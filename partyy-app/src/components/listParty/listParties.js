@@ -7,16 +7,19 @@ import {
 import deleteicon from './delete.png'
 import './listParty.css'
 import home from './home.png'
-import host from './host5.png'
+import host from './host1.png'
 import edit from './pencil.png'
 
 
 // this function will do an override on reactstrap's css
 const cardStyle = {
-    // backgroundColor: '#9162e4'
+    backgroundColor: 'rgb(255,82,169)',
     borderRadius: "5%"
 }
 
+const textStyle = {
+    // filter: "drop-shadow(3px 3px 5px white)"
+}
 // const btnStyle = {
 //     color: 'black',
 //     backgroundColor: 'rgb(252,216,85)'
@@ -61,11 +64,11 @@ class ListParty extends Component {
                                             <h3 className="headerListParties"><CardTitle>{party.name}</CardTitle></h3>
                                         </div>
                                         <div className="innerCardText">
-                                            <CardText>Address: {party.address}</CardText>
+                                            <CardText style={textStyle}>Address: {party.address}</CardText>
                                             {/* <CardText>zip code: {party.zipcode}</CardText> */}
-                                            <CardText>Date: {party.date}</CardText>
-                                            <CardText>Time: {party.time}</CardText>
-                                            <CardText>Age Range: {party.ageRange}</CardText>
+                                            <CardText style={textStyle}>Date: {party.date}</CardText>
+                                            <CardText style={textStyle}>Time: {party.time}</CardText>
+                                            <CardText style={textStyle}>Age Range: {party.ageRange}</CardText>
                                             {/* <CardText>Latitude: {party.lat}</CardText> */}
                                         </div>
 
@@ -79,7 +82,7 @@ class ListParty extends Component {
                                             <img 
                                                 src={edit}
                                                 alt="edit"
-                                                className="editBtn"
+                                                className="editBtn icons"
                                                 size="small"
                                                 onClick={() => { this.props.history.push(`/${party.id}/edit`) }}
                                             />
@@ -98,7 +101,7 @@ class ListParty extends Component {
                                             <img 
                                                 src={deleteicon}
                                                 alt="deleteicon"
-                                                className="deleteBtn"
+                                                className="deleteBtn icons"
                                                 size="small"
                                                 onClick={() => {
                                                     const deleteConfrim = window.confirm(`Are you sure you want to delete ${party.name} party and be a party pooper?`)
