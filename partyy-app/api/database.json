@@ -106,6 +106,18 @@
       "time": "8pm",
       "lat": 36.1706189,
       "long": -86.7888584
+    },
+    {
+      "userId": 1,
+      "name": "#Baller's Only",
+      "address": " 5123 Country Club Dr, Brentwood, TN ",
+      "zipcode": 37076,
+      "date": "May 31st",
+      "time": "9pm",
+      "ageRange": "over 21",
+      "lat": 36.0215514,
+      "long": -86.80547880000002,
+      "id": 8
     }
   ],
   "attendees": [
